@@ -111,4 +111,29 @@ TEKNOFEST 2026 döneminde tüm çalışmalar **Beyin Kanseri** türleri üzerine
 *   Projelerin özgün olması ve akademik dürüstlük ilkelerine bağlı kalınması zorunludur.
 
 ---
+
+## 🔍 8. Rakip Analizi ve Referanslar
+
+Başarılı bir proje geliştirmek için geçmiş yılların kazananları ve uluslararası standartlar analiz edilmiştir.
+
+### 🏆 Geçmiş TEKNOFEST Kazananları (2025 - Akciğer Kanseri Odağı)
+*   **Dockminds (1.lik):** Çok modlu yapay zeka ve protein dinamiği destekli ilaç keşfi. Allosterik inhibitör tasarımı ve in vitro doğrulama ile öne çıkmışlardır.
+*   **CalpaCure (3.lük):** Biomarker keşfi ve shRNA tabanlı genetik tedavi yaklaşımları.
+
+### 🌐 Uluslararası Yarışmalar ve Başvuru Kaynakları
+Beyin tümörü analizi (segmentasyon ve sınıflandırma) alanındaki dünya standartları:
+
+*   **MICCAI BraTS Challenge:** Beyin tümörü segmentasyonu ve hayatta kalma süresi tahmini üzerine en prestijli yarışmadır.
+*   **RSNA Glioblastoma Classification:** Glioblastoma alt tiplerinin MRI üzerinden sınıflandırılması.
+
+### 💻 Açık Kaynaklı Kod Referansları
+Projemizde temel alınabilecek yüksek performanslı GitHub projeleri:
+
+1.  **[BraTS 2021 Implementation](https://github.com/younesbelkada/BraTS_2021):** Glioblastoma segmentasyonu için 3D U-Net mimarisi.
+2.  **[Trusted BraTS (TBraTS)](https://github.com/Cocofeat/TBraTS):** Belirsizlik kestirimi yapan güvenilir segmentasyon modelleri.
+3.  **[Multimodal MP-MRI Segmentation](https://github.com/mfaizan-ai/Brain-Tumors-Segmentation):** 2023 BraTS verisiyle güncel segmentasyon boru hattı.
+4.  **[3D U-Net survival prediction](https://github.com/woodywff/brats_2019):** BraTS 2019 dünya 3.lüğü çözümü.
+
+---
+
 *Bu doküman TEKNOFEST 2026 Onkolojide 3T yarışma şartnamesi baz alınarak oluşturulmuştur.*
