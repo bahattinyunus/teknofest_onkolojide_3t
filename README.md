@@ -1,4 +1,4 @@
-![Onkolojide 3T Header](file:///C:/Users/bahat/.gemini/antigravity/brain/00b13885-39e8-4b10-9e67-624e4d673d37/oncology_3t_header_1772474307499.png)
+![Onkolojide 3T Banner](assets/oncology_3t_premium_banner.png)
 
 # TEKNOFEST 2026: Onkolojide 3T Yarışması
 
