@@ -1,0 +1,964 @@
+ 
+ 
+1 
+ 
+ 
+ 
+ 
+ 
+1 
+ 
+İÇİNDEKİLER 
+1. YARIŞMA AMACI .............................................................................................................. 4 
+2. YARIŞMA KAPSAMI .......................................................................................................... 4 
+2.1. BAŞVURU SÜREÇ BİLGİLERİ ........................................................................................... 8 
+3. YARIŞMA KATILIM KOŞULLARI ........................................................................................ 9 
+3.1. TAKIM ÜYESİ KOŞULLARI................................................................................................. 9 
+3.2 DANIŞMANLIK KOŞULLARI ............................................................................................. 10 
+3.3 PROJE KOŞULLARI .......................................................................................................... 10 
+3.4. ETİK KURUL ONAY BELGESİ VE ETİK GEREKLİLİKLER ................................................... 13 
+4. YARIŞMA TAKVİMİ .......................................................................................................... 14 
+5. PUANLAMA VE DEĞERLENDİRME ................................................................................. 14 
+5.1. PROJE ÖN DEĞERLENDİRME RAPORU ......................................................................... 14 
+5.2. PROJE ÖN DEĞERLENDİRME RAPORU İTİRAZ SÜRECİ ................................................ 15 
+5.3. 
+PROJE YARI FİNAL VE FİNAL RAPORLARI .................................................................. 15 
+5.4. 
+PROJE YARI FİNAL RAPORU İTİRAZ SÜRECİ .............................................................. 17 
+5.5. 
+YARIŞMA PUANLAMASI ............................................................................................. 17 
+5.6. 
+FİNAL SÖZLÜ SUNUM VE POSTER SUNUM PUANLAMASI ....................................... 18 
+6. 
+ÖDÜLLER ................................................................................................................. 18 
+6.1. EN İYİ SUNUM VE POSTER ÖDÜLLERİ ........................................................................... 19 
+6.2. GELECEK VADEDEN YENİLİKÇİ PROJE ÖDÜLÜ ............................................................ 19 
+6.3 EN İYİ YAPAY ZEKÂ ODAKLI PROJE ÖDÜLÜ .................................................................... 19 
+7. 
+İLETİŞİM ................................................................................................................... 20 
+8. 
+GENEL KURALLAR ................................................................................................... 20 
+9. 
+ETİK KURALLAR ....................................................................................................... 20 
+10. 
+SORUMLULUK BEYANI ............................................................................................ 20 
+11. 
+YARIŞMA ORGANİZASYONU VE YÖNETİMİ ............................................................ 20 
+12. 
+EĞİTİM VE MENTORLUK .......................................................................................... 21 
+13. 
+PROJELERİN ÖZGÜNLÜĞÜ VE YAYIN İLKELERİ ..................................................... 21 
+ 
+ 
+2 
+ 
+TABLOLAR 
+Tablo 1. Versiyonlar Tablosu 
+3 
+Tablo 2. Yarışma Takvimi 
+14 
+Tablo 3. Yarışma Puanlaması 
+18 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+3 
+ 
+VERSİYONLAR 
+Tablo 1. Versiyonlar Tablosu 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+VERSİYON 
+TARİH 
+AÇIKLAMA 
+2 
+13.11.2025 
+YENİ 
+3 
+20.02.2026 
+4. YARIŞMA TAKVİMİ 
+ 
+4 
+ 
+1. YARIŞMA AMACI 
+Bu yarışma, onkoloji alanında bireyselleştirilmiş (personalised) ve hassas (precision) 
+tedavi teknolojilerinin geliştirilmesini teşvik etmek, yenilikçi projeleri desteklemek ve 
+kanser tanı ve tedavisinde klinik etki potansiyeli yüksek çözümler üretmeyi 
+amaçlamaktadır. Katılımcıların, genetik mühendisliği, biyoteknoloji ve/veya yapay 
+zekâ gibi modern teknolojileri kullanarak onkolojik problemlere yönelik etkin ve 
+İnovatif Ön Tanı, Tanı, Hedefe Yönelik Tedavi ve Tedavi Sonrası Takip çözümleri 
+sunmaları hedeflenmektedir. TEKNOFEST 2026 yarışmasında hedef hastalık, 
+Beyin Kanseri türleridir. 
+Fikri Mülkiyet Hakları: TEKNOFEST başvurusu yapılan projelerin (THS1-3) yarışma 
+sonrasında geliştirilmesinin sağlanmasının temini için Yarışmacının bir talepte 
+bulunması ya da Cansağlığı Vakfı’nın projeye destek vermek istemesi halinde 
+taraflar arasında yapılacak ilave protokol ile proje üzerindeki fikri ve sınai hakların 
+hukuki durumu ve diğer hususlar düzenleme altına alınacaktır.   
+2. YARIŞMA KAPSAMI 
+Onkolojide 3T Yarışması aşağıdaki çalışma alanlarını kapsamaktadır: 
+1. Genetik ve Epigenetik Yaklaşımlar: Bu kategori, kanser biyolojisinin genetik 
+temelini hedefleyen inovatif terapötik stratejileri kapsamaktadır. Aşağıdaki 
+teknolojiler bu başlık altındadır: 
+CRISPR/Cas9, Cas12, Cas13 vb. Gen Düzenleme Teknolojileri: Tümör baskılayıcı 
+genlerin yeniden aktivasyonu, onkogenlerin susturulması veya hedefe yönelik genom 
+mühendisliği uygulamaları. 
+Epigenetik Modülasyon Teknolojileri: DNA metilasyonu, histon modifikasyonu ve 
+kromatin mimarisi üzerine kurulu terapötik müdahaleler. 
+Tümör Mikroçevresinin Genetik Modifikasyonu: Kanser hücrelerinde bağışıklık 
+yanıtını baskılayan moleküler yolların düzenlenmesi. 
+Bu kategori, genetik hassasiyet ve kişiselleştirilmiş tedavi hedefleyen projeleri 
+desteklemektedir. 
+2. Hücresel ve Moleküler Tedaviler: Kanser immünolojisi ve gelişmiş biyoteknolojik 
+müdahaleleri içeren geniş bir alandır: 
+• 
+İmmünoterapi Yaklaşımları: Kontrollü T hücresi aktivasyonu, Kontrol noktası 
+inhibitörleri (PD-1, CTLA-4 vb.), Tümör infiltran lenfosit (TIL) terapileri 
+• 
+Hücresel Tedaviler: CAR-T hücre tedavileri, Transgenik NK hücre platformları, 
+Dendritik hücre aşıları 
+ 
+ 
+5 
+ 
+• 
+Akıllı İlaç ve Moleküler Hedefli Tedaviler: Monoklonal antikorlar, Antikor-ilaç 
+konjugatları (ADC), Tümör spesifik moleküler hedeflere yönelik yeni jenerasyon 
+küçük molekül inhibitörleri 
+• 
+Gen Transfer Teknolojileri: Viral ve non-viral vektör platformları, Onkolitik 
+viroterapi 
+Bu alan, hücresel mühendislik ve moleküler hedeflere dayalı modern tedavileri teşvik 
+etmektedir. 
+3. Yapay Zekâ Destekli Yeni Nesil İlaç Geliştirme Çözümleri: Bu kategori, kanser 
+tedavisinde yapay zekâ ve hesaplamalı biyolojinin gücünü birleştiren projeleri 
+kapsamaktadır: 
+• 
+Yaşam 
+süreçlerinin 
+biyoinformatik 
+analizi 
+(multi-omics): 
+Genomik, 
+transkriptomik, proteomik, metabolomik verilerle yeni hedef belirleme. 
+• 
+AI Tabanlı Hedef Keşfi: Kanser alt tiplerine özgü biyobelirteçlerin belirlenmesi, 
+Yeni moleküler hedeflerin hesaplamalı modellerle tahmin edilmesi 
+• 
+İlaç Tasarımında Yapay Zekâ: Moleküler bağlanma simülasyonları, Derin 
+öğrenme 
+tabanlı 
+ilaç-molekül 
+taramaları, 
+Molekül 
+optimizasyonu 
+ve 
+farmakokinetik modelleme 
+• 
+Tedaviye Yanıt Tahmini: Makine öğrenmesi modelleriyle hasta spesifik tedavi 
+yanıtı öngörüsü 
+AI destekli projeler, onkolojide hız, maliyet azaltma ve kişiselleştirilmiş terapinin yeni 
+potansiyellerini ortaya çıkarmayı amaçlar. 
+4. Onkolojide Terapötik Kanser Aşısı Teknolojileri: Bu kategori, immün sistemin 
+tümör hücrelerini tanıma ve yok etme kapasitesini artırmayı hedefleyen yeni nesil aşı 
+projelerini kapsamaktadır: 
+• 
+RNA Bazlı Kanser Aşıları: mRNA ile neoantijenlerin sunumu, Kişiselleştirilmiş 
+tümör mutasyonlarına göre tasarlanan aşı platformları 
+• 
+DNA Bazlı Kanser Aşıları: Plazmid DNA tabanlı terapötik aşılar, Elektroporasyon 
+ve vektör destekli DNA aşı teknolojileri 
+• 
+Peptid ve Neoantijen Tabanlı Aşılar 
+• 
+Adjuvan teknolojileri ve immün yanıt güçlendiriciler 
+Bu alanda geliştirilen projeler, tümör özgüllüğü yüksek, güvenli ve etkili terapötik aşı 
+platformları sunmayı hedefler. 
+5. Tıbbi Onkoloji: Tıbbi Onkoloji başlığı, ileri düzey kanser tedavilerinin farmakolojik 
+ve biyolojik yönlerini kapsayan projeleri içermektedir. Bu alanda geliştirilecek 
+projeler: 
+• 
+Kişiselleştirilmiş Tedavi Yaklaşımları: Genomik profilleme, moleküler alt tip 
+belirlenmesi ve bireye özgü tedavi planlaması. 
+ 
+ 
+6 
+ 
+• 
+Hedefe Yönelik Tedaviler: Tirozin kinaz inhibitörleri, monoklonal antikorlar, 
+immün kontrol noktası inhibitörleri ve yeni biyobelirteç tabanlı ilaç stratejileri. 
+• 
+Kemoterapi Optimizasyonu: Daha etkili ve daha az toksik tedavi protokollerinin 
+geliştirilmesi. 
+• 
+Metastatik Hastalık Yönetimi: İleri evre tümörlerde progresyonu yavaşlatmaya 
+yönelik yenilikçi farmakolojik çözümler. 
+Bu çalışma alanı, medikal onkoloji biliminin yeni nesil tedavi modelleriyle 
+harmanlanmasını hedeflemektedir. 
+6. Tıbbi Genetik: Kanser genomunun, herediter sendromların ve somatik 
+mutasyonların analizi üzerine kurulu projeler bu başlık altında değerlendirilir: 
+• 
+Kanserde Genetik Tanı ve Risk Analizi: BRCA1/2, TP53, MLH1, APC vb. genlerde 
+germline ve somatik varyant analizleri. 
+• 
+Moleküler Tümör Profilleme: NGS tabanlı panel testler ile tümörün mutasyonel 
+yükünün ve biyobelirteçlerinin tespiti. 
+• 
+Farmakogenetik Yaklaşımlar: İlaç yanıtının genetik belirleyicileri, hedefe yönelik 
+tedaviye uygun hasta seçim algoritmaları. 
+• 
+Kansere Yatkınlık Genetiği: Poligenik risk skorları ve kalıtsal kanser 
+sendromlarının moleküler tanı çözümleri. 
+Bu kategori, genetik bilimi ile klinik onkolojiyi birleştiren projelere geniş bir olanak 
+sağlar. 
+7. Radyasyon Onkolojisi: Kanser tedavisinde iyonizan radyasyon kullanımını 
+optimize etmeyi ve daha güvenli, etkili çözümleri geliştirmeyi amaçlayan projeleri 
+kapsar: 
+• 
+Radyoterapi Optimizasyonu: IMRT, VMAT, stereotaktik radyocerrahi (SRS) ve 
+stereotaktik vücut radyoterapisi (SBRT) gibi ileri tedavi tekniklerinin iyileştirilmesi. 
+• 
+Radyobiyoloji Temelli Yaklaşımlar: Tümör ve normal doku yanıtını modüle eden 
+moleküler biyobelirteçlerin kullanımı. 
+• 
+Doz Hesaplama ve Kişiselleştirme: Yapay zeka destekli doz dağılım 
+simülasyonları, adaptif radyoterapi çözümleri. 
+• 
+Tedavi Toksisitelerinin Azaltılması: Normal doku korunması için yeni planlama 
+algoritmaları veya radyoprotektif yaklaşımlar. 
+Bu alan, radyasyon tedavisinin hassasiyet ve etkinlik açısından bir üst seviyeye 
+çıkarılmasını teşvik eder. 
+8. Patoloji: Patoloji, tanısal süreçlerin temelini oluşturan hücresel ve moleküler 
+analizleri kapsamaktadır. Bu kategoriye yönelik projeler: 
+• 
+Dijital Patoloji ve Yapay Zekâ: Histopatolojik görüntülerde tümör dokularının 
+sınıflandırılması, derecelendirilmesi ve otomatik tümör tanı modelleri. 
+ 
+ 
+7 
+ 
+• 
+Moleküler Patoloji: Tümör gen ekspresyon profili, immünohistokimyasal 
+belirteçler, translasyonel patoloji çözümleri. 
+• 
+Biyopsi ve Numune Değerlendirme Teknolojileri: Minimal invaziv numune alma 
+teknolojileri, hızlı tanı sistemleri. 
+• 
+Tümör Heterojenitesinin Analizi: Intratümöral varyasyonun moleküler ve 
+görüntüleme temelli incelenmesi. 
+Patoloji başlığı, kanser tanısının altın standartlarını ileri teknoloji ile buluşturan 
+projeleri desteklemektedir. 
+9. Radyoloji ve Görüntüleme Teknolojileri: Bu başlık, tümörlerin tanısı, evrelenmesi 
+ve tedavi yanıtının takibinde kullanılan tıbbi görüntüleme yöntemlerine yönelik 
+teknolojik yenilikleri içerir: 
+• 
+İleri Görüntüleme Modaliteleri: MR, PET/CT, PET/MR, fonksiyonel görüntüleme 
+(DWI, DCE-MRI). 
+• 
+Görüntü İşleme ve AI: Tümör tespiti, segmentasyonu, tedavi yanıt analizi için 
+derin öğrenme tabanlı modeller. 
+• 
+Radyomik ve Radyogenomik Yaklaşımlar: Görüntü biyobelirteçleri ile genetik 
+mutasyonların ve tedavi yanıtının tahmin edilmesi. 
+• 
+Minimal İnvaziv Girişimsel Onkoloji: Radyofrekans ablasyon, kriyoablasyon, 
+mikrodalga ablasyon gibi görüntüleme eşliğinde yapılan tedavi çözümleri. 
+Bu kategori, tanı ve tedavinin görüntüleme tabanlı entegrasyonunu güçlendirmeyi 
+amaçlar. 
+10. Ağrı Bilimi (Algoloji): Kanser hastalarının yaşam kalitesini artırmayı hedefleyen, 
+özellikle ileri evre hastalarda ağrı kontrolü üzerine kurulmuş projeleri kapsar: 
+• 
+Kanser Ağrısı Yönetimi: Opioid dışı analjezik stratejiler, nöromodülasyon 
+teknikleri, hedefe yönelik ağrı blokları. 
+• 
+Yenidoğan ve Pediatrik Onkoloji Ağrı Çözümleri: Yan etki profili düşük tedavi 
+modelleri. 
+• 
+Nöropatik Ağrı ve Tedavisi: Kemoterapiye bağlı nöropatik ağrı için yeni tedavi 
+protokolleri. 
+• 
+AI Tabanlı Ağrı İzleme: Hasta bildirimli sonuçların dijital sistemlerle analizi, ağrı 
+şiddeti tahmin modelleri. 
+Bu alan, kanser tedavisinin palyatif bakım boyutunu bilimsel inovasyonla birleştirir. 
+11. Cerrahi Onkoloji Teknolojileri: Cerrahi onkolojide kullanılacak yeni nesil 
+teknolojileri ve minimal invaziv tedavi yaklaşımlarını kapsayan projelerdir: 
+• 
+Robotik Cerrahi ve Navigasyon Sistemleri: Tümör rezeksiyonunda hassasiyet 
+artıran robotik platformlar, 3D navigasyon destekli cerrahi. 
+ 
+ 
+8 
+ 
+• 
+Gerçek Zamanlı Tümör Görüntüleme: Floresan görüntüleme, intraoperatif 
+MR/US, indosiyanin yeşili (ICG) destekli rezeksiyon teknolojileri. 
+• 
+Nano-cerrahi ve Mikro-cerrahi Çözümleri: Mikroinvaziv girişimlerle tümör 
+çıkarımı. 
+• 
+Cerrahi Planlama ve Simülasyon: Dijital ikiz modeller, AI destekli preoperatif 
+planlama algoritmaları. 
+Bu alan, cerrahi tedaviyi daha güvenli, daha hızlı ve daha etkin hale getirmeyi 
+hedefleyen teknolojilere açıktır. 
+12. Biyomedikal Cihaz Teknolojileri: Bu kategori, kanserin tanı, tedavi ve izlem 
+süreçlerinde kullanılmak üzere geliştirilen yenilikçi biyomedikal cihaz ve sistem 
+tabanlı çözümleri kapsamaktadır. Aşağıdaki teknolojiler bu başlık altındadır: 
+• Sensör ve Biyosensör Tabanlı Tanı Sistemleri: Kanser hücrelerine veya 
+biyobelirteçlere özgü sinyalleri tespit eden optik, elektrokimyasal, manyetik veya 
+piezoelektrik sensör teknolojileri. 
+• Mikroakışkan ve Lab-on-a-Chip Platformları: Kan örnekleri, hücreler veya 
+biyolojik sıvılarda hızlı analiz yapabilen, düşük hacimli, yüksek doğruluklu tanı ve 
+tarama sistemlerinin geliştirilmesi. 
+• Elektromekanik ve Enerji Tabanlı Tedavi Cihazları: Elektroportasyon, fotodinamik 
+tedavi, lazer uygulamaları, ultrasonik enerji, termoablasyon veya hedefli fiziksel etki 
+üreten diğer tedavi cihazları. 
+• Giyilebilir ve Taşınabilir Biyoizleme Teknolojileri: Hastanın tedavi yanıtını veya 
+fizyolojik parametrelerini sürekli izlemeye yönelik giyilebilir sensör sistemleri ve 
+uzaktan takip cihazları. 
+Bu kategori, kanser tanı ve tedavi süreçlerini hızlandıran, klinik ihtiyaçlara doğrudan 
+çözüm sunan ve yenilikçi mühendislik tasarımına sahip projeleri desteklemektedir. 
+2.1. Başvuru Süreç Bilgileri 
+• Yarışma süreci boyunca TEKNOFEST yarışmalar komitesi tarafından yapılacak 
+olan tüm bilgilendirmeler takımın iletişim sorumlusu olarak belirlediği kişiye 
+yapılacaktır. Bu sebeple her takım bir iletişim sorumlusu belirlemelidir. (KYS’ ye 
+kayıtlı e-mail adresine bilgilendirme yapılmaktadır.) 
+• Süreçlerin (Başvuru Yapma, Rapor Son Yükleme Tarihi, İtiraz Süreci, 
+Doldurulması Gereken Form vb.) takibi iletişim sorumlusunun görevi olup iletişim 
+sorumlusundan kaynaklı gecikmeler ve/veya aksaklıklardan TEKNOFEST 
+yarışmalar komitesi sorumlu değildir. 
+• Yarışma kapsamında gerekli tüm süreçler (Başvuru, Rapor Alımı, Rapor Sonuçları, 
+İtiraz Süreçleri, Üye ekleme/çıkarma işlemleri vb.) KYS sistemi üzerinden 
+yapılmaktadır. Takımların KYS portalı üzerinden süreçleri takip etmesi 
+gerekmektedir. 
+ 
+ 
+9 
+ 
+• Yarışma süreci boyunca başvuru yapma, rapor yükleme, itiraz süreci ve form 
+doldurma işlemleri takım kaptanı ve/veya danışmanın yetkisi dahilinde olup 
+yarışma süreçleri bu kişiler üzerinden yönetilmektedir.  
+• Üye ekleme/çıkarma işlemleri Proje Sunumu son teslim tarihine kadar 
+yapılmaktadır. Proje Sunumu son tesliminden sonra takımlar içerisinde değişiklik 
+yapılmayacaktır.  
+• Finale kalan takımlara sağlanacak ulaşım ve konaklama desteği sınırlıdır. Destek 
+verilecek kişi sayısı takım başı en fazla 3 kişi (danışman dahil) olup TEKNOFEST 
+Yarışmalar Komitesi tarafından değişiklik yapma hakkı bulunmaktadır. Takım 
+oluştururken bu maddenin göz önünde bulundurulması gerekmektedir. 
+• TEKNOFEST Yarışmalar Komitesi festival alanında bulunacak üye sayısını 
+sınırlandırma yetkisine sahiptir. Sınırlandırma yapılması durumunda komite 
+tarafından bilgilendirme yapılacaktır. 
+• Takım oluşturma işlemini tamamlayan yarışmacıların projesine uygun yarışmaya 
+başvuru yapması gerekmektedir. 
+• Başvuru sürecini tamamlayan yarışmacılar, herhangi bir eleme sürecine tabi 
+tutulmaksızın, yarışma takviminde belirtilen Ön Değerlendirme Raporu son 
+yükleme tarihine kadar raporlarını eksiksiz bir şekilde hazırlayarak sisteme 
+yüklemekle sorumludur. Raporun belirtilen süre içerisinde sisteme yüklemeyen 
+takımlar bu aşamada elenmiş sayılacaktır.  
+• Yarı final aşamasına kalan takımlardan bir prototip beklenmemektedir. Projenin 
+genel hatlarından yüzeysel bir sunum beklenmektedir. 
+• Yarışma final aşamasında ise uygulama projeleri ve AR-GE aşamasındaki 
+projelerin bir simülasyonunun veya prototipinin hazırlanmış olduğu çalışmalar yer 
+alacaktır. 
+3. YARIŞMA KATILIM KOŞULLARI 
+3.1. Takım Üyesi Koşulları 
+• Yarışmaya Türkiye ve yurt dışında öğrenim gören T.C. vatandaşı veya yabancı 
+uyruklu tüm lisans, yüksek lisans, doktora öğrencileri Takım üyesi olarak 
+katılabilir. Doktora mezunları sadece takım danışmanı olarak yer alabilir. 
+• Her takım için bir danışman bulundurulması zorunludur. 
+• Her takım yalnızca bir proje ile katılabilir. 
+• Yarışmaya sadece takım olarak başvuru yapılabilir. 
+• Bir takım üyesi aynı yarışmanın başka bir takımın üyesi olarak bulunamaz. 
+(danışman dahil.) 
+• Takım üye sayısı en az 3, en fazla 5 üyeden olacak şekilde takımlar 
+oluşturulmalıdır. (Bu sayıya danışman dahil değildir). 
+ 
+ 
+10 
+ 
+• Takımlar tek bir yükseköğretim kurumundan oluşturulabileceği gibi bir veya 
+birden fazla kurumdan öğrencinin/çalışanın bir araya gelmesi ile karma bir takım 
+da oluşturulabilir. 
+• Projeler özgün olmalı (%20’den fazla benzerlik intihal sayılır) ve daha önce 
+başka bir yarışmaya katılmış projeler geliştirilerek sunulmalıdır. 
+• Takımlar tek bir ülkeden oluşturulabileceği gibi bir veya birden fazla ülkenin 
+öğrencisinin bir araya gelmesiyle karma bir takım oluşturulabilir.  
+• Bir takımda üyelerin çoğunluğunun bulunduğu ülke, takımın ülke bilgisi olarak 
+belirlenebilir; ancak, takım kendi inisiyatifine bağlı olarak istedikleri bir ülkeyi 
+seçebilir. 
+• Başvuru tarihleri arasında takım kaptanı/danışman (varsa) sistem üzerinden 
+kaydolur, danışman (varsa) ve/veya takım kaptanı, takım üyelerinin kaydını doğru 
+ve eksiksiz olarak sistemde oluşturur ve üyelerin e-postalarına davet gönderir. 
+Davet gönderilen üye, başvuru sistemine giriş yaparak “Takım bilgilerim” 
+kısmından gelen daveti kabul eder ve kayıt işlemi tamamlanır. Aksi durumda kayıt 
+işlemi tamamlanmış olmaz. 
+3.2 Danışmanlık Koşulları 
+• 
+Yarışma kapsamında takımlarda 1 danışman bulunması zorunludur.  
+• 
+Danışman olarak takıma eklenecek kişinin, doktora mezunu (PhD) veya Tıp 
+Hekimi (MD) olması gerekmektedir. 
+• 
+Danışman final aşamasına kadar takıma destek olacağını ve final aşaması 
+süresince takımın yanında bulunacağını taahhüt eder. 
+• 
+Yarışmacılar final aşamasına danışmanları ile gelmek zorunda değildir. 
+Başvurularda takım danışmanı bulunması durumunda danışmanlık belgesi 
+göndermesi zorunludur. 
+• 
+Danışman olarak görev yapacak kişinin danışmanlık görevlerini yerine 
+getireceğine dair belgenin ıslak imzalı olarak TEKNOFEST Yarışmalar Komitesinin 
+açıklayacağı tarihte sisteme yüklenmesi gerekmektedir. (Belge şablonları 
+tarafınızla paylaşılacaktır.) 
+3.3 Proje Koşulları 
+• Çalışmaların deneysel aşamalarının tamamlamamış ve prototip oluşturulmamış 
+olması beklenir. Teknolojik Hazırlık Seviyesi başvuru öncesi THS 4’den az 
+olmalıdır (Şekil 1). 
+• 
+THS 4: Laboratuvar ortamında tezgâh (bench) üstü, bileşen ve alt bileşen 
+kanser etkinlik ve doğrulaması yapılmıştır. Laboratuvar ortamında tedavi 
+prototipi elde edilmiştir. 
+ 
+ 
+11 
+ 
+ 
+Şekil 1. Teknoloji Hazırlık Seviyeleri 
+• 
+Ön değerlendirme raporu, yarı final raporu ve final aşamasındaki rapor, poster ve 
+sunum dili Türkçe ya da İngilizce olmalıdır. 
+• 
+Projeler mutlaka özgün olmalı, kopya edilmemiş olmalıdır. Projeler ön biçimsel 
+değerlendirmeye alınacak, intihal olup olmadığı yönünde değerlendirmeye tabi 
+tutulacaktır. Benzer ya da taklit olduğu tespit edilen projeler yarışma dışında 
+kalacak (diskalifiye edilecek) ve yarışmacılar en az 2 yıl yarışmaya 
+başvuramayacaktır. Yarışmacılar daha önce başka bir yarışmada aynı proje ile yer 
+almışsa, katılmış̧  olunan yarışmanın adı, yeri, tarihi, organizatörü ve yarışma 
+sonucu proje dosyası içerisinde kesinlikle bildirilmelidir. 
+• 
+Ön Eleme Aşaması: Katılımcılar Proje Ön Değerlendirme Raporunu T3 KYS 
+Kurumsal Yönetim Sistemi üzerinden sunar. Raporda proje özeti, amaç ve 
+beklenen çıktılar yer alır. Ön elemeyi geçen takımlar Yarı Final aşaması için Proje 
+Detay dosyasını hazırlayabilmeleri için 1 aylık bir hazırlanma sürecine geçer. 
+• 
+Yarı Final Aşaması: Takımlar, detaylı Yarı Final Proje Raporlarını T3 KYS Kurumsal 
+Yönetim Sistemi üzerinden sunar. Bu raporda proje planı, yöntem, beklenen 
+sonuçlar, proje bütçesi ve risk yönetimi yer almalıdır. Değerlendirme yalnızca 
+raporlar üzerinden yapılır; sözlü veya poster sunumu yapılmaz. Puan 
+sıralamasında ilk 50 Takım, Yarı finale geçer. Yarı finali geçen takımlar, final 
+aşamasına kadar projelerinin devamı için Proje Destek Ödeneğini almaya hak 
+kazanacakladır. 
+• 
+Final Aşaması: Finale kalan takımlar, Final proje raporlarını T3 KYS Kurumsal 
+Yönetim Sistemi üzerinden sunar ve final günü jüriye PowerPoint sözlü sunumu ve 
+ 
+ 
+12 
+ 
+takım stantları başında poster sunumu eşliğinde sunar. Projeler jüri tarafından 
+Final Proje Raporu, Sözlü Sunum ve Poster Sunumları dikkate alınarak 
+değerlendirilir. Puan sıralamasında ilk 25 Takım, finale geçer ve TEKNOFEST 
+2026’da Sözlü Sunum ve Poster Sunumu yapmaya hak kazanır.  
+• 
+Geçmiş dönemde dereceye giren takımlar katılım sağladıkları dönemdeki   
+projelerini geliştirerek yarışmaya katılamazlar. Yeni proje fikirleri ile katılabilirler. 
+• 
+Rapor metinlerinde çalışma ile alakalı olmayan ifadelere, damgalayıcı, 
+manipülatif ve/veya siyasi söylemlere kesinlikle yer verilmemelidir. 
+• 
+Yarışma süreci boyunca TEKNOFEST yarışmalar komitesi tarafından yapılacak 
+olan tüm bilgilendirmeler takımın iletişim sorumlusu olarak belirlediği kişiye 
+yapılacaktır. Bu sebeple her takım bir iletişim sorumlusu belirlemelidir. 
+• 
+Süreçlerin (Başvuru Yapma, Rapor Yükleme Son Tarih, İtiraz Süreci, Doldurulması 
+Gereken Form vb.) takibi iletişim sorumlusunun görevi olup iletişim 
+sorumlusundan kaynaklı gecikmeler ve/veya aksaklıklardan TEKNOFEST 
+yarışmalar komitesi sorumlu değildir. 
+• 
+Başvurular 28 Şubat 2026 tarihine kadar www.t3kys.com başvuru sistemi 
+üzerinden çevrimiçi olarak yapılır. 
+• 
+Başvuru tarihleri arasında iletişim sorumlusu/danışman sistem üzerinden kayıt 
+olur, varsa danışman ve/veya iletişim sorumlusu takım üyelerinin kaydını doğru ve 
+eksiksiz olarak sisteme yükler ve varsa danışman ve üyelerin e- postalarına davet 
+gönderir. Davet gönderilen üye Başvuru Sistemi’ne giriş yaparak “Takım 
+Bilgilerim” kısmından gelen daveti kabul eder ve kayıt tamamlanır. Aksi durumda 
+kayıt tamamlanmış olmaz. 
+• 
+Yarışma kapsamında gerekli tüm süreçler (Başvuru, Rapor Alımı, Rapor Sonuçları, 
+İtiraz Süreçleri, Üye ekleme/çıkarma işlemleri vb.) KYS sistemi üzerinden 
+yapılmaktadır. Takımların KYS sistemi üzerinden süreçlerini takip etmesi 
+gerekmektedir. 
+• 
+Üye ekleme/çıkarma işlemleri Proje Sunumu son teslim tarihine kadar 
+yapılmaktadır. Proje Sunumu son tesliminden sonra takımlar içerisinde değişiklik 
+yapılamayacaktır.  
+• 
+Aynı proje ile TEKNOFEST kapsamında yalnızca tek bir kategoriye veya tek bir 
+yarışmaya başvurulabilir. Aynı proje ile farklı kategori veya TEKNOFEST 
+kapsamında düzenlenen farklı yarışmaya başvuru yapan takımların veya kişilerin 
+başvuruları geçersiz sayılacaktır. 
+• 
+Yarışmacı, farklı projeler ile farklı TEKNOFEST yarışmalarına başvuru yapabilir. 
+• 
+Yarışmacı, başvuru yapmadan önce yarışma hakkındaki tüm açıklamaları ve 
+katılım koşullarını okuyup onaylamak suretiyle yarışmaya katılabilecektir. 
+• 
+Yarışmaya başvuranlar, işbu şartnamedeki koşulların tamamını kabul etmiş 
+sayılmaktadır. 
+ 
+ 
+13 
+ 
+ 3.4. Etik Kurul Onay Belgesi ve Etik Gereklilikler 
+• 
+İnsan veya hayvan hücre veya dokularını deney içeresinde kullanacak projeler için 
+etik kurul onay belgeleri alması ve proje raporunda sunması zorunludur. 
+• 
+Proje önerilerinin insandan hücre veya dokuların alınarak deneylerde kullanılması 
+durumunda; 5237 sayılı Türk Ceza Kanunu Madde 90, 3359 sayılı Sağlık Hizmetleri 
+Temel Kanunu Ek 10. Madde ve Türkiye’nin taraf olduğu anlaşmalar gereğince 
+çalışmanın niteliğine bağlı olarak Girişimsel olmayan Etik Kurul/Üniversite 
+Senatolarınca veya Kamu Hastanelerince kurulması onaylanmış Etik Kurullardan 
+Etik Kurul Onay Belgesi alınması zorunludur. 
+• 
+Proje önerilerinin deney hayvanı tanımına giren herhangi bir organizma 
+kullanılmasını içermesi durumunda; Hayvan Deneyleri Etik Kurulları Çalışma Usul 
+ve Esaslarına Dair Yönetmelik, Madde 4-d kapsamında onaylanmış Hayvan 
+Deneyleri Yerel Etik Kurulları'ndan (HADYEK) Etik Kurul Onay Belgesi alınması 
+zorunludur. 
+• 
+Etik kurul onayı gerektiren durumlara, bu durumlarda hangi kurum/kuruluştan ne 
+tür etik kurul onay belgesi alınacağına ve bu belgenin taşıması gereken niteliklere 
+dair detaylı bilgi için TÜBİTAK tarafından hazırlanan Etik Kurul Onay Belgesi Bilgi 
+Notu 2020’yi incelemek için tıklayınız. 
+• 
+Proje kapsamında gerekli olması halinde, TÜBİTAK tarafından belirtilen nitelikleri 
+taşıyan Etik Kurul Onay Belgesi’nin proje detay raporu teslim tarihine kadar 
+sisteme yüklenmiş olması gerekmektedir. Belgenin belirtilen süre içerisinde 
+sisteme yüklenmemesi durumunda ilgili proje yarışmadan elenecektir. 
+• 
+Etik kurul onayı gerektirip bu onay alınmadan yapılan çalışmalar yasal yaptırım 
+kapsamında olduğundan, yarışmanın herhangi bir sürecinde etik ihlal yapıldığı 
+tespit edilen projeler yarışmadan diskalifiye edilecek olup, bu husustaki tüm 
+sorumluluk yarışmacılara ait olacaktır. 
+Ayrıca: 
+• Proje önerilerinin, doğrudan ve dolaylı olarak insan verisi içermesi durumunda 
+KVKK (Kişisel Verilerin Korunması Kanunu) formunun alınması, 
+• Araştırma projelerinde “Aydınlatılmış Onam Formu”nun alındığının belirtilmesi ve 
+bir nüshasının eklenmesi, 
+• Başkalarına ait fotoğraf, video vb. materyallerin kullanımı için sahiplerinden izin 
+alınması ve izin alındığının belirtilmesi, 
+• Kullanılan fikir ve sanat eserleri için telif hakları düzenlemelerine uyulduğunun 
+belirtilmesi gerekmektedir. 
+Bu başlıkta belirtilen hususlar, projenin değerlendirilmesi için temel esaslardan 
+olup, projenin etik uygunluğunu belirlemek için kritik öneme sahiptir. Önerilen 
+projeler, bu hususlar açısından titizlikle incelendikten sonra değerlendirmeye 
+alınacaktır. 
+ 
+ 
+14 
+ 
+Etik ilkelerin gözetilmesi ve bu ilkelere uyulması tamamen yarışmacıların 
+sorumluluğundadır. Yarışma sürecinde herhangi bir projede, herhangi bir etik 
+ihlal tespiti durumunda ilgili proje yarışmadan elenecek ve gerekli yaptırımlar 
+uygulanacaktır. 
+4. YARIŞMA TAKVİMİ 
+Tablo 2. Yarışma Takvimi 
+5. PUANLAMA VE DEĞERLENDİRME 
+Onkolojide 3T Yarışması kapsamında değerlendirme süreci; Proje Ön Değerlendirme 
+Rapor, Yarı final rapor, Final rapor, Final Proje Sözlü Sunumu, Final Poster Sunumu 
+ve yarışma final puanlaması olarak üç farklı aşamada yapılacaktır. Proje Ön 
+Değerlendirme Rapor, Yarı final rapor, Final rapor Final Proje Sözlü Sunumu, Final 
+Poster Sunumu dosyalarını göndermeyen takımlar yarışmaya katılmaya hak 
+kazanamayacaklardır. 
+Rapor tesliminin yarışma takvimde belirtilen gün ve saat içerisinde KYS sistemi 
+üzerinden yüklenmesi gerekmektedir. İtiraz süreci TEKNOFEST yarışmalar komitesi 
+tarafından sonuçların açıklanmasının ardından gönderilen takım üyelerinin KYS’ ye 
+kayıtlı mail ile takımlara bildirilmektedir. Takvim ve saatlerde TEKNOFEST Yarışmalar 
+Komitesi tarafından değişiklik yapma hakkı bulunmaktadır. Başvuru sonrası 
+takımların göndermiş oldukları ön değerlendirme raporları ile bir “ön eleme” işlemi 
+gerçekleştirilecektir. Bu ön eleme sürecinde göndermiş oldukları raporları, rapor 
+düzeni ve proje konusu bakımından incelenerek ön değerlendirme raporunun 
+değerlendirmeye alınması kararı verilecek olup geçersiz veya yanlış başvurular 
+elenecektir. Bu kapsamda elenecek olan projenin itiraz hakkı bulunmamaktadır. 
+5.1. Proje Ön Değerlendirme Raporu 
+Takımlar, Proje Ön Değerlendirme Raporu (ÖDR)’nu yarışma takviminde belirtilen 
+tarihte sisteme yükleyerek teslim etmekle yükümlüdür. ÖDR’nin teslimi ile alakalı 
+detaylı bilgilendirme yarışma başvuru tarihinin sona ermesinin ardından 
+başvurusunu tamamlamış olan takımlar ile paylaşılacaktır. ÖDR sonuçlarına göre bir 
+ön eleme gerçekleştirilecektir. ÖDR’ye KYS sistemi üzerinden ulaşılabilir. Ön 
+TARİH 
+AÇIKLAMA 
+28.02.2026 
+Yarışma son başvuru tarihi 
+31.03.2026 – 17:00 
+Proje ön değerlendirme raporu son teslim tarihi 
+06.04.2026 
+Proje Ön Değerlendirme Raporu sonuçlarına göre ön 
+elemeyi geçen takımların açıklanması 
+08.06.2026 - 17:00 
+Yarı Final Proje Raporu Son Teslim Tarihi 
+22.06.2026 
+Finalistlerin açıklanması 
+30 Eylül- 4 Ekim 2026 
+TEKNOFEST ŞANLIURFA 
+ 
+ 
+15 
+ 
+değerlendirmeler sonucunda ikinci aşamaya geçen takımlar Yarışma Takvimi’nde 
+belirtilen tarihte açıklanacaktır. 
+Başvuru esaslarına uygun, eksiksiz şekilde tarafımıza iletilen projeler aşağıdaki 
+kriterler göz önünde bulundurularak ön elemeye tabi tutulacaktır. Proje Ön 
+Değerlendirme Raporu’nda dikkat edilecek hususlar şunlardır: 
+• Kuramsal Temel: Projenin dayandığı kuramsal temellerin sağlamlığı ve kullanılan 
+yöntemlerin bilimselliği dikkate alınacaktır. 
+ 
+• Çözüm Üretmesi: Projenin ilgili hedef kanser türünün tedavisinde probleme, 
+nasıl bir çözüm üreteceğine dair ne açıdan katkı sağlayacağına bakılacaktır. 
+ 
+• Yenilikçi-Özgün: Projenin alanında daha önce uygulanmış başka projeler ile 
+benzerliği olup olmadığına bakılacaktır. Benzerlik hususu esinlenme ve/veya 
+devam çalışmasından fazla olduğu sürece çalışma özgün kabul edilmeyecektir. 
+ 
+• Etik ve Biçimsel Özellikler: Taklit, benzer proje ve çalışmalar, kaynak 
+göstermeden doğrudan alıntı biçiminde metinde yer alan ifadeler ile biçimsel 
+kurallara uygunsuzluk, belgelerde eksiklik gibi hususlar incelenecektir. 
+Yukarıdaki maddeler haricinde Yarışma Değerlendirme Kurulu uygun gördüğü 
+takdirde istenilen farklı bir kriteri ekleyebilir. Eklenen kriter, rapor şablonunda 
+belirtilecektir. 
+5.2. Proje Ön Değerlendirme Raporu İtiraz Süreci 
+Takımların rapor değerlendirmesi sonucunda 50 baraj puanından en fazla 15 puan 
+altında alması durumunda itiraz etme hakkı bulunacaktır. Rapor itirazları, rapor 
+sonuçları açıklandıktan sonraki 48 saat içerisinde KYS üzerinden alınmaktadır.  
+İtirazlar takım danışmanı veya takım kaptanı tarafından yapılmalıdır. Belirlenen süreç 
+içerisinde iletilmeyen itirazlar değerlendirmeye alınmayacaktır. Takımların itirazları 
+farklı hakem heyetlerine gönderilir ve yeniden değerlendirilir. İtiraz süreci hakkında 
+detaylı bilgiye GENEL KURALLARDAN ulaşabilirsiniz. İtiraz aşmasında da başarılı 
+olarak geçemeyen takımların yüksek itiraz hakkı bulunmaktadır. Yüksek itiraz 
+başvurunuz için iletisim@TEKNOFEST.org adresine itiraz gerekçeleriniz ve 
+dilekçenizin yer aldığı mailin TEKNOFEST Yarışmalar İtiraz Yönetmeliği’nde belirtilen 
+kriterlere göre tarafımıza gönderilmesi gerekmektedir.  Yüksek itiraz süreci hakkında 
+detaylı bilgiye GENEL KURALLARDAN ulaşabilirsiniz. 
+5.3. Proje Yarı Final ve Final Raporları 
+Takımlar, proje yarı final ve final raporlarını yarışma takviminde belirtilen tarihte KYS 
+portalı üzerinden yüklemekle yükümlüdürler.  
+ 
+ 
+16 
+ 
+Yarı final aşamasında 50 ve üzeri puan alan takımlar, TEKNOFEST finallerinde 
+yarışma ve proje destek ödeneği almaya hakkı kazanacaktır. Proje destek ödeneği 
+miktarı, TEKNOFEST Yarışmalar Komitesi tarafından belirlenecek olup bilgilendirme 
+iletişim sorumlusunun KYS’ye kayıtlı mail adresi üzerinden yapılacaktır. Maddi 
+destek başvurusu yapmak zorunlu değildir. 
+Proje Yarı final ve final raporları aşağıdaki kriterler göz önünde bulundurularak 
+değerlendirilecektir: 
+• Kuramsal Temel: Projenin dayandığı kuramsal temellerin sağlamlığı ve kullanılan 
+yöntemlerin bilimselliği dikkate alınacaktır. 
+ 
+• Çözüm Üretmesi: Projenin ilgili hedef kanser türünün tedavisinde probleme, 
+nasıl bir çözüm üreteceğine dair ne açıdan katkı sağlayacağına bakılacaktır. 
+✓ Proje, ilgili hedef kanser türünün tedavisinde nasıl çözüm üretiyor?  
+✓ Şimdiki çözümler neden yetersiz kalıyor? 
+✓ Mevcut çözüm yöntemlerinin yetersiz kaldığı hususlar belirtilirken ilgili 
+literatüre başvurulmuş mu? 
+ 
+• Yenilikçi-Özgün: Projenin alanında daha önce uygulanmış başka projeler ile 
+benzerliği olup olmadığına bakılacaktır. 
+✓ Benzer ürün veya proje var mı? Yeni bir teknoloji ya da tedavi sunuyor mu? 
+✓ Projenizi, piyasada bulunan benzer ürünlerden ayıran özellik/özellikler 
+nelerdir? 
+ 
+• Yöntem: Projenizde başvurduğunuz yöntemlerin hangi bilimsel ilkeler ve 
+teknolojik uygulamalar üzerine kurgulandığına bakılacaktır. 
+✓ Hangi bilimsel ve/veya teknik uygulamalara dayanarak bir çözüm 
+öneriyorsunuz? Bunların temel prensipleri nelerdir? Projenize ait 
+görsel(2B) ve/veya laboratuvar deney sonuçlarınız var mı? 
+ 
+• Hayata 
+Geçirilebilirlik 
+/ 
+Uygulanabilirlik: 
+Projenin 
+hayata 
+geçirilebilme/uygulanma imkânına bakılacaktır. 
+✓ Projeniz nasıl hayata geçirilebilir? Ortaya koyulan proje önerisi ticari ya da 
+insanlık yararına bir ürüne dönüştürülebilir mi? 
+ 
+• Tahmini Maliyet ve Proje Zaman Planlaması: Proje, zaman planlaması ve 
+tahmini maliyet açısından değerlendirilecektir. 
+✓ Projenin tahmini maliyeti ile ilgili detaylı bilgi verilmiş mi?  
+✓ Benzer projeler ile bir maliyet karşılaştırması yapılmış mı? 
+✓ Projenin aşamalarını içeren bir zaman planlaması yapılmış mı? 
+✓ Projede hangi aşamada nelere ihtiyaç olduğuna dair bir malzeme listesi 
+hazırlanmış mı?  
+ 
+ 
+17 
+ 
+✓ Projede hangi aşamada hangi harcamaların yapılacağına dair bilgi verilmiş 
+mi? 
+ 
+• Projenin Hedef Kitlesi: Projenin kimler tarafından kullanılacağının ve kimlere 
+hitap edeceğinin belirtilip belirtilmediğine bakılacaktır. 
+✓ Projenin hedef kitlesi kim ya da kimlerdir? 
+✓ Projede belirtilen sorunu yaşayanların tanımı yapılmış mı? 
+ 
+• Proje Ekibi: Projeye dahil olan tüm kişi ve kurumların belirtilmiş olup olmadığına 
+bakılacaktır. 
+✓ Proje ekibi kimlerden oluşuyor?  
+✓ Proje yöneticisi kimdir?  
+✓ Proje ekibinde yer alanların projeye katkısı belirtilmiş mi?  
+✓ Proje için kimlerle neden işbirliği yapılması gerektiği hakkında planlama 
+yapılmış mı? 
+ 
+• Riskler: Projeyi olumsuz yönde etkileyecek unsurlardan (risklerden) bahsedilip 
+bahsedilmediğine bakılacaktır. 
+✓ Projeyi olumsuz yönde etkileyebilecek unsurlar (riskler) tespit edilmiş mi? 
+✓ Bu problemlere yönelik çözüm önerisi/önerileri sunulmuş mu? 
+Yukarıdaki maddeler haricinde Yarışma Değerlendirme Kurulu uygun gördüğü 
+takdirde istenilen farklı bir kriteri ekleyebilir. Eklenen kriter, rapor şablonunda 
+belirtilecektir. 
+5.4. Proje Yarı Final Raporu İtiraz Süreci 
+Takımların yarı final rapor değerlendirmesi sonucunda 50 baraj puanından en fazla 15 
+puan altında alması durumunda itiraz etme hakkı bulunacaktır. Rapor itirazları, rapor 
+sonuçları açıklandıktan sonraki 48 saat içerisinde KYS üzerinden alınmaktadır. 
+İtirazlar takım danışmanı veya takım kaptanı tarafından yapılmalıdır. Belirlenen süreç 
+içerisinde iletilmeyen itirazlar değerlendirmeye alınmayacaktır. Takımların itirazları 
+farklı hakem heyetlerine gönderilir ve yeniden değerlendirilir. İtiraz süreci hakkında 
+detaylı bilgiye GENEL KURALLARDAN ulaşabilirsiniz. İtiraz aşmasında da başarılı 
+olarak geçemeyen takımların yüksek itiraz hakkı bulunmaktadır. Yüksek itiraz 
+başvurunuz için iletisim@TEKNOFEST.org adresine itiraz gerekçeleriniz ve 
+dilekçenizin yer aldığı mailin TEKNOFEST Yarışmalar İtiraz Yönetmeliği’nde belirtilen 
+kriterlere göre tarafımıza gönderilmesi gerekmektedir.  Yüksek itiraz süreci hakkında 
+detaylı bilgiye GENEL KURALLARDAN ulaşabilirsiniz. 
+5.5. Yarışma Puanlaması 
+Aşağıdaki tabloda rapor puanlama türleri ve yüzdeleri belirtilmiştir. Yarı Final 
+Değerlendirme Süreci sonunda İlk 50 Takım, Yarı Final eleme sürecine geçecektir. 
+ 
+ 
+18 
+ 
+Detaylı Yarı Final Raporunu ileten 50 takım arasından gerçekleştirilecek 
+değerlendirme sonucunda puanlama sıralamasında ilk 25 Takım, TEKNOFEST 2026 
+Finallerinde Sözlü Sunum ve Poster Sunumuna geçmeye hak kazanacaktır.  Tablo 3 
+içerisinde, Final Rapor, sözlü sunum ve poster sunumu değerlendirilerek belirtilen 
+puanlandırma türleri üzerinden alacakları yüzdelik puanlar ile İlk Üç Takım Ödülleri, 
+Gelecek Vadeden Yenilikçi Proje Ödülü, En İyi Yapay Zekâ Odaklı Proje Ödülü ve En 
+İyi Sunum ve Poster Ödülleri belirlenecektir. 
+Tablo 3. Yarışma Puanlaması 
+5.6.  Final Sözlü Sunum ve Poster Sunum Puanlaması 
+ Finale kalan takımların projeleri, alanlarında uzman jüri ekipleri tarafından 
+değerlendirilecektir. Jüri değerlendirmesi için görsel sunum ve poster hazırlanması 
+gerekmektedir.  Yarışma ortamı gereksinimlerine, poster ve görsel sunumlara dair 
+ayrıntılı bilgiler finalist takımlarının belirlenmesinin ardından finalist takımlarla 
+paylaşılacaktır. Final aşamasında takımların görsel sunum ve poster hazırlamaları 
+zorunlu olup poster boyut ve içeriği hakkında bilgilendirme TEKNOFEST Yarışmalar 
+Komitesi tarafından yapılacaktır. Final değerlendirmelerine göre finalist takımların 
+sonuç sıralaması www.TEKNOFEST.org sitesinden duyurulacaktır. 
+6. ÖDÜLLER 
+ Finalde, puanlama türlerinde toplamda en yüksek puana ulaşacak ilk üç takıma para 
+ödülü verilecektir. Aşağıdaki tabloda belirtilen ödüller, ödül almaya hak kazanan 
+takımlara 
+verilecek 
+toplam 
+tutarı 
+göstermektedir, 
+bireysel 
+ödüllendirme 
+yapılmayacaktır. Birincilik, ikincilik ve üçüncülük ödülleri, takım üyelerinin (sistemde 
+kayıtlı tüm üyelere) toplam sayısına göre eşit miktarda bölünerek her şahsın 
+belirteceği banka hesabına yatırılacaktır. Yarışmada dereceye giren takımın 
+danışmanına tabloda belirtilen ödüller aktarılacaktır.  
+PUANLAMA TÜRÜ 
+ÖN ELEME 
+(%) 
+YARI FİNAL 
+(%) 
+FİNAL 
+(%) 
+Projenin Yenilikçi ve Özgün Olması 
+%40 
+%30 
+%30 
+Proje Kapsamı ve Yöntemin Detaylılığı 
+%40 
+%30 
+%20 
+Uygulanabilirlik ve Hayata Geçirilebilirlik 
+%20 
+%40 
+%30 
+Proje Sözlü Sunum ve Poster Sunum 
+- 
+- 
+%20 
+ 
+ 
+19 
+ 
+Tablo 4. Ödül Miktarları 
+Ek olarak finalist olan takımlar arasından En İyi Sunum ve Poster, Gelecek Vadeden 
+Yenilikçi Proje, En İyi yapay Zeka Odaklı Proje ödülleri verilecektir. Yarışmada yer alan 
+projeler, aşağıda yer alan kategorilerde de ödül açısından değerlendirilecektir. Bu 
+ödüller, projenin ve proje yürütme sürecinin öne çıkan farklı yönlerini taltif etmek için 
+verilecek olup En İyi Sunum ve En iyi Poster ödülleri prestij amaçlı olup maddi bir 
+karşılığı bulunmamaktadır.  
+6.1. En İyi Sunum ve Poster Ödülleri 
+Yarışma alanında sözlü sunum veya poster sunumlarında en iyi şekilde 
+değerlendirilen takımlara, bu amaçta derece elde edip edilmemesine bakılmaksızın 
+projesini süre, sorulara verilen doğru cevaplar, beden dili, dinleyicilere karşı tutum, 
+sunumun akıcılığı, sunum taslağı gibi kriterleri en iyi şekilde yansıtan takımlara En İyi 
+Sunum veya En İyi Poster ödülü verilecektir. Takım olarak bu belirtilen kriterlere 
+bakılarak değerlendirme yapılacaktır.  
+ En İyi Sunum ve En İyi Poster ödülleri prestij amaçlı olup bir maddi karşılığı 
+bulunmamaktadır. 
+6.2. Gelecek Vadeden Yenilikçi Proje Ödülü 
+Yarışma alanında yenilikçi, sürdürülebilir ve geleceğe yönelik potansiyeli yüksek 
+projeler geliştiren bir takıma verilen ödüldür. Bu ödül, projelerin teknik alt yapısı, 
+yarattığı etki, uzun vadeli faydaları ve uygulanabilirlik gibi kriterler doğrultusunda 
+değerlendirilecektir. Dereceye girmemiş olsa dahi, projelerinin gelecekte önemli 
+katkılar sağlayabileceği ve alandaki gelişimlere yön verebileceği düşüncesiyle 
+seçilen takımlar bu ödüle layık görülür. Takımın projesi, özgünlük ve yenilikçilik 
+potansiyeli gibi unsurlar göz önünde bulundurularak değerlendirilecektir.  
+Belirtilen ödül kapsamında 50.000TL para ödülü ve TEKNOFEST 2026 plaketi 
+takdim edilecektir. 
+6.3 En İyi Yapay Zekâ Odaklı Proje Ödülü 
+Bu ödül, kanser biyoteknolojisi alanında yapay zekâ yöntemlerini yenilikçi biçimde 
+kullanan, yüksek bilimsel potansiyele sahip ve gelecekte ticarileşebilir çıktılar 
+üretme kapasitesi bulunan projelere verilmektedir. Proje; hesaplamalı biyoloji, derin 
+öğrenme, çok modlu veri entegrasyonu, moleküler modelleme, tanı veya tedavi 
+optimizasyonu gibi alanlarda özgün bir yaklaşım sunmalı ve Yapay Zekâ’nın 
+onkolojiye uygulanmasında yeni ufuklar açmalıdır. Bu ödül ile amaç, Yapay Zekâ 
+DERECE 
+ÖDÜL MİKTARI 
+DANIŞMAN 
+Birincilik Ödülü 
+400.000 ₺ 
+70.000 ₺ 
+İkincilik Ödülü 
+300.000 ₺ 
+50.000 ₺ 
+Üçüncülük Ödülü 
+200.000 ₺ 
+30.000 ₺ 
+ 
+ 
+20 
+ 
+destekli ilaç keşfi, biyobelirteç tespiti, prediktif onkoloji ve tedavi kişiselleştirmesi gibi 
+ileri teknolojilerin genç araştırmacılar tarafından geliştirilmesini teşvik etmek ve bu 
+alandaki yeni nesil bilim insanlarını desteklemektir.  
+Belirtilen ödül kapsamında 50.000TL para ödülü ve TEKNOFEST 2026 plaketi 
+takdim edilecektir. 
+7. İLETİŞİM  
+Yarışma hakkında sorular için TEKNOFEST web sitesinde ONKOLOJİDE 3T 
+YARIŞMASI sayfasından yarışmanın grubuna katılabilirsiniz. Bu grubun aktif olarak 
+takip edilmesi ve her takımdan en az 1 kişinin üye olarak bu gruptaki duyuruları, soru 
+ve cevapları takip etmesi yarışmacıların sorumluluğundadır. Belirtilen e-posta 
+grubunun takip edilmemesi sonucunda doğacak takımların güncel bilgilendirmelere 
+ulaşamama durumundan TEKNOFEST Yarışmalar Komitesi sorumlu değildir. 
+Yarışmanın organizasyonel bölümleri ile ilgili soruların iletisim@TEKNOFEST.org e-
+posta adresi üzerinden iletilmesi gereklidir. Sorularınızın yukarıda doğru kanallar 
+üzerinden iletilmesi, sorulan sorulara hızlı dönüş yapılabilmesi açısından önem arz 
+etmektedir. 
+8. GENEL KURALLAR 
+Yarışma kapsamında geçerli olan Genel Kurallar kitapçığına ulaşmak için tıklayınız. 
+9. ETİK KURALLAR 
+Yarışma kapsamında geçerli olan Etik Kurallar kitapçığına ulaşmak için tıklayınız. 
+10. SORUMLULUK BEYANI 
+T3 Vakfı ve TEKNOFEST, yarışmacıların teslim etmiş olduğu herhangi bir üründen 
+veya yarışmacıdan kaynaklanan herhangi bir yaralanma veya hasardan hiçbir şekilde 
+sorumlu değildir. Yarışmacıların 3. kişilere verdiği zararlardan T3 Vakfı ve 
+organizasyon yetkilileri sorumlu değildir. T3 Vakfı ve TEKNOFEST, takımların kendi 
+sistemlerini Türkiye Cumhuriyeti yasaları çerçevesinde hazırlamalarını ve 
+uygulamalarını sağlamaktan sorumlu değildir. Türkiye Teknoloji Takımı Vakfı işbu 
+şartnamede her türlü değişiklik yapma hakkını saklı tutar. 
+11. Yarışma Organizasyonu ve Yönetimi 
+Bu yarışma, onkoloji alanında bireyselleştirilmiş ve hassas tedavi teknolojilerinin 
+geliştirilmesini teşvik etmek amacıyla Dr. Cihan Taştan'ın ve Cansağlığı Vakfı 
+tarafından belirlenen ekip koordinasyonunda düzenlenmektedir. Yarışmanın 
+ 
+ 
+21 
+ 
+organizasyon süreçleri, bilimsel değerlendirmeleri ve takımların mentorluk 
+hizmetleri, alanında uzman akademisyenler ve profesyonellerin desteğiyle 
+yürütülmektedir. 
+12. Eğitim ve Mentorluk 
+Yarışma sürecinde Yarı Finale kalan son 50 Takıma, Onkolojide 3T Bilim Kurulu üyeleri 
+tarafından, aşağıdaki konularda eğitim (Türkçe veya İngilizce, Online) verilebilecek ve 
+Finalist son 25 Takıma, talep etmeleri halinde, 30dk’lık birer toplantı (her takım için) 
+olmak üzere mentorluk sunulacaktır: 
+12.1. Genetik ve Epigenetik Yaklaşımlar 
+12.2. Hücresel ve Moleküler Tedaviler 
+12.3. Yapay Zekâ Destekli Yeni Nesil İlaç Geliştirme Çözümleri 
+12.4. Onkolojide Terapötik Kanser Aşısı Teknolojileri 
+12.5. Tıbbi Onkoloji 
+12.6. Tıbbi Genetik 
+12.7. Radyasyon Onkolojisi 
+12.8. Patoloji 
+12.9. Radyoloji ve Görüntüleme Teknolojileri 
+12.10. Ağrı Bilimi (Algoloji) 
+12.11. Cerrahi Onkoloji Teknolojileri 
+12.12. Sunum ve Poster Eğitimleri 
+13. Projelerin Özgünlüğü ve Yayın İlkeleri 
+Yarışmaya sunulan projelerin özgün olması gerekmektedir. Projelerde kullanılacak 
+her türlü bilgi ve veri, yarışma sırasında yalnızca bilimsel değerlendirme ve tanıtım 
+amaçlı kullanılacaktır. Cansağlığı Vakfı ve Dr. Cihan Taştan koordinasyonunda, 
+projelerin bilimsel değerlendirmesi ve tanıtımı sırasında etik kurallara uyulacağını 
+taahhüt eder. 
+ 
+ 
+ 
+22 
+ 
+ 

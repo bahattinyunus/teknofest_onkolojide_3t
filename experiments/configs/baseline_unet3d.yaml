@@ -1,0 +1,70 @@
+# GlioSight — Baseline 3D U-Net Konfigürasyonu
+# TEKNOFEST 2026 Onkolojide 3T
+# ================================================
+
+project:
+  name: GlioSight
+  version: "0.1.0"
+  seed: 42
+  competition: "TEKNOFEST 2026 Onkolojide 3T"
+  description: "Beyin tümörü segmentasyonu ve sürviyal tahmini"
+
+data:
+  root: "data/raw"
+  splits_file: "data/splits/brats2021_splits.json"
+  modalities: ["t1", "t1ce", "t2", "flair"]
+  normalization: "zscore"    # zscore | percentile | minmax
+  crop_size: [128, 128, 128]
+  batch_size: 2
+  num_workers: 4
+  pin_memory: true
+  prefetch_factor: 2
+
+model:
+  type: "unet3d"
+  in_channels: 4          # T1, T1ce, T2, FLAIR
+  out_channels: 3         # WT, TC, ET (binary per class)
+  base_features: 32       # Filtre sayısı [32, 64, 128, 256, 512]
+  dropout_p: 0.1
+  deep_supervision: true  # DS katmanları aktif
+
+loss:
+  type: "dice_focal"
+  dice_weight: 1.0
+  focal_weight: 1.0
+  alpha: 0.25             # Focal alpha
+  gamma: 2.0              # Focal gamma
+  deep_supervision: true
+  ds_weights: [1.0, 0.5, 0.25]
+
+training:
+  epochs: 300
+  lr: 1.0e-4
+  weight_decay: 1.0e-5
+  scheduler: "cosine"     # cosine | plateau
+  use_amp: true           # Mixed precision (CUDA gerektirir)
+  patience: 50            # Early stopping
+  gradient_clip: 12.0
+  save_every_n_epochs: 25
+
+augmentation:
+  flip_p: 0.5
+  rotation_p: 0.3
+  max_rotation_angle: 15.0
+  noise_p: 0.2
+  noise_std: 0.05
+  intensity_p: 0.3
+  gamma_p: 0.2
+
+inference:
+  roi_size: [128, 128, 128]
+  overlap: 0.5
+  threshold: 0.5
+  use_tta: false
+  sw_batch_size: 2
+
+logging:
+  output_dir: "experiments/results/baseline_unet3d"
+  tensorboard: true
+  mlflow: false
+  log_level: "INFO"
