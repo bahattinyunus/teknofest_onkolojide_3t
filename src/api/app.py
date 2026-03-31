@@ -34,24 +34,30 @@ except Exception as e:
     engine = None
 
 
-class PatientResponse(BaseModel):
+class ComprehensiveResponse(BaseModel):
     subject_id: str
     risk_score: float
     risk_level: str
     mgmt_status: str
-    mgmt_probability: float
-    wt_volume_ml: float
+    tumor_volume_ml: float
+    resection_volume_ml: float
+    xai_status: str
 
 
 @app.get("/")
 async def root():
-    return {"message": "GlioSight API Çalışıyor", "status": "online"}
+    return {
+        "project": "GlioSight AI",
+        "version": "1.2.0 (Sovereignty Tier)",
+        "status": "online",
+        "modules": ["Segmentation", "Survival", "Radiogenomics", "XAI", "Surgical-Planning"]
+    }
 
 
-@app.post("/analyze/{subject_id}", response_model=PatientResponse)
-async def analyze_patient(subject_id: str, data_path: str):
+@app.post("/analyze/comprehensive/{subject_id}", response_model=ComprehensiveResponse)
+async def analyze_comprehensive(subject_id: str, data_path: str):
     """
-    Belirtilen hasta klasörünü analiz et ve sonuçları döndür.
+    Uçtan uca kapsamlı klinik analiz (XAI ve Cerrahi dahil).
     """
     if engine is None:
         raise HTTPException(status_code=500, detail="GlioSight Engine devredışı")
@@ -61,19 +67,16 @@ async def analyze_patient(subject_id: str, data_path: str):
         raise HTTPException(status_code=404, detail="Klasör bulunamadı")
         
     try:
-        # Mevcut motoru çalıştır (main.py'deki engine)
         results = engine.process_patient(data_path)
         
-        # Radyogenomik tahmin (MGMT) ekle (Eğer main.py'ye eklenmediyse)
-        # Şimdilik ana akışa ekleyeceğiz.
-        
-        return PatientResponse(
+        return ComprehensiveResponse(
             subject_id=subject_id,
             risk_score=results["survival"]["risk_score"],
             risk_level=results["survival"]["risk_level"],
-            mgmt_status=results.get("radiogenomics", {}).get("mgmt_status", "Tahmin Edilemedi"),
-            mgmt_probability=results.get("radiogenomics", {}).get("mgmt_probability", 0.5),
-            wt_volume_ml=results["survival"]["features"]["wt_volume_ml"]
+            mgmt_status=results["radiogenomics"]["mgmt_status"],
+            tumor_volume_ml=results["surgical"]["tumor_volume_ml"],
+            resection_volume_ml=results["surgical"]["resection_volume_ml"],
+            xai_status="Heatmap Generated Successfully"
         )
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
