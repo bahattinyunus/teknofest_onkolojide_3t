@@ -1,8 +1,14 @@
 ![Onkolojide 3T Banner](assets/oncology_3t_premium_banner.png)
 
-# TEKNOFEST 2026: Onkolojide 3T Yarışması
+# 🔬 GlioSight — Multimodal MRI AI Platform
+> **TEKNOFEST 2026: Onkolojide 3T Yarışması — Beyin Kanseri Odaklı Tanı ve Sağkalım Analiz Sistemi**
 
-Bu depo, **TEKNOFEST 2026 Onkolojide 3T (İnovatif Ön Tanı, Tanı, Hedefe Yönelik Tedavi ve Tedavi Sonrası Takip)** yarışması kapsamında **Beyin Kanseri** odaklı geliştirilen projeyi ve tüm teknik dokümantasyonu içermektedir.
+[![Python](https://img.shields.io/badge/Python-3.9+-3776AB?logo=python&logoColor=white)](https://www.python.org/)
+[![PyTorch](https://img.shields.io/badge/PyTorch-2.0+-EE4C2C?logo=pytorch&logoColor=white)](https://pytorch.org/)
+[![MONAI](https://img.shields.io/badge/MONAI-Medical_AI-blue)](https://monai.io/)
+[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+
+Bu depo, **TEKNOFEST 2026 Onkolojide 3T** yarışması kapsamında geliştirilen, Glioblastoma (GBM) hastaları için uçtan uca **Tanı, 3B Segmentasyon, Sağkalım Analizi ve Cerrahi Planlama** ekosistemini içermektedir.
 
 ---
 
@@ -14,48 +20,26 @@ TEKNOFEST 2026 döneminde tüm çalışmalar **Beyin Kanseri** türleri üzerine
 
 ---
 
-## 🛠️ 2. Teknik Çalışma Alanları (8 Ana Kategori)
+## 🚀 2. GlioSight Temel Özellikler (Core Features)
 
-### 2.1. Genetik ve Epigenetik Yaklaşımlar
-*   **Gen Düzenleme:** CRISPR/Cas9, Cas12, Cas13 uygulamaları.
-*   **Epigenetik Modülasyon:** DNA metilasyonu, histon modifikasyonu.
-*   **Tümör Mikroçevresi:** Bağışıklık yanıtını baskılayan yolların modifikasyonu.
+GlioSight, radyologlar ve onkologlar için 4 ana modülden oluşan bütünleşik bir karar destek sistemi sunar:
 
-### 2.2. Hücresel ve Moleküler Tedaviler
-*   **İmmünoterapi:** Kontrol noktası inhibitörleri (PD-1, CTLA-4), TIL terapileri.
-*   **Hücresel Tedaviler:** CAR-T, Transgenik NK hücreleri, Dendritik hücre aşıları.
-*   **Akıllı İlaçlar:** Antikor-ilaç konjugatları (ADC), küçük molekül inhibitörleri.
-*   **Gen Transferi:** Viral ve non-viral vektörler, onkolitik viroterapi.
+### 🧩 2.1. 3B Otomatik Segmentasyon (Segmentation)
+*   **Mimari:** Residual-Dilation 3D U-Net (MONAI tabanlı).
+*   **Kapasite:** T1, T1ce, T2 ve FLAIR modalitelerini senkronize işleyerek **NCR/NET** (Nekrotik), **ED** (Ödem) ve **ET** (Kontrast Tutan) bölgelerini ayrıştırır.
 
-### 2.3. Yapay Zekâ Destekli İlaç Geliştirme
-*   **Multi-omics Analizi:** Genomik, proteomik ve metabolomik verilerle hedef belirleme.
-*   **AI Tabanlı Hedef Keşfi:** Biyobelirteç tahmini.
-*   **İlaç Tasarımı:** Moleküler bağlanma simülasyonları, derin öğrenme tabanlı taramalar.
-*   **Tedavi Yanıt Tahmini:** Hasta spesifik modeller.
+### 📈 2.2. Radyomik Sağkalım Analizi (Survival)
+*   **Yöntem:** PyRadiomics öznitelikleri üzerinden **Cox Proportional Hazards** ve **XGBoost Survival** analizi.
+*   **Çıktı:** Hastaya özel Kaplan-Meier sürviyal eğrileri ve sayısal risk skorlaması.
 
-### 2.4. Terapötik Kanser Aşısı Teknolojileri
-*   **RNA/DNA Aşıları:** mRNA neoantijen sunumu, plazmid DNA teknolojileri.
-*   **Peptid ve Neoantijen:** Kişiselleştirilmiş mutasyon odaklı aşılar.
-*   **Adjuvan Teknolojileri:** İmmün yanıt güçlendiriciler.
+### 💡 2.3. Açıklanabilir AI (Explainable AI - XAI)
+*   **Grad-CAM:** Modelin hangi tümör bölgesine odaklanarak risk tahmini yaptığını gösteren 3B ısı haritaları.
+*   **SHAP:** En belirleyici 15 radyomik özelliğin (örn: Elongation, Sphericity) risk skoru üzerindeki etkisini görselleştirir.
 
-### 2.5. Tıbbi Onkoloji
-*   Kişiselleştirilmiş tedavi planlaması ve moleküler alt tip tayini.
-*   Tirozin kinaz inhibitörleri ve biyobelirteç tabanlı stratejiler.
-*   Kemoterapi optimizasyonu ve metastatik hastalık yönetimi.
-
-### 2.6. Tıbbi Genetik
-*   BRCA1/2, TP53 gibi genlerde germline/somatik varyant analizleri.
-*   NGS tabanlı paneller ve moleküler tümör profilleme.
-*   Farmakogenetik: İlaç yanıtı genetik belirleyicileri.
-
-### 2.7. Radyasyon Onkolojisi
-*   IMRT, VMAT, SRS ve SBRT tekniklerinin optimizasyonu.
-*   Radyobiyoloji temelli moleküler biyobelirteç kullanımı.
-*   AI destekli doz hesaplama ve adaptif radyoterapi.
-
-### 2.8. Patoloji
-*   Dijital Patoloji: Histopatolojik görüntülerde yapay zeka tabanlı sınıflandırma.
-*   Otomatik tümör tanı ve derecelendirme modelleri.
+### 🩺 2.4. Cerrahi Planlama & Marjin Analizi (Surgical)
+*   **Güvenlik Koridoru:** Tümör etrafında 5mm-15mm dinamik cerrahi marjin hesaplama.
+*   **MTR Metriği:** Margin-to-Tumor Ratio analizi ile rezeksiyonun agresiflik düzeyini belirleme.
+*   **Safety Score:** Morfolojik verilere dayalı otomatik cerrahi güvenlik puanlama.
 
 ---
 

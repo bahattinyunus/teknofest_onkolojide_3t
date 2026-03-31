@@ -41,6 +41,8 @@ class ComprehensiveResponse(BaseModel):
     mgmt_status: str
     tumor_volume_ml: float
     resection_volume_ml: float
+    margin_to_tumor_ratio: float
+    surgical_safety_score: str
     xai_status: str
 
 
@@ -76,6 +78,8 @@ async def analyze_comprehensive(subject_id: str, data_path: str):
             mgmt_status=results["radiogenomics"]["mgmt_status"],
             tumor_volume_ml=results["surgical"]["tumor_volume_ml"],
             resection_volume_ml=results["surgical"]["resection_volume_ml"],
+            margin_to_tumor_ratio=results["surgical"].get("margin_to_tumor_ratio", 0),
+            surgical_safety_score=results["surgical"].get("safety_score", "N/A"),
             xai_status="Heatmap Generated Successfully"
         )
     except Exception as e:

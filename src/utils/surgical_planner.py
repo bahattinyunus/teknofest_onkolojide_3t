@@ -50,15 +50,27 @@ def calculate_surgical_margins(
     
     # Sadece marjin bölgesi hacmi (Margin Volume = Resection - Tumor)
     margin_only_vol = resection_vol - tumor_vol
+    
+    # Marjin/Tümör Oranı (MTR) — Yeni Metrik
+    mtr = margin_only_vol / tumor_vol if tumor_vol > 0 else 0
 
     return {
         "tumor_volume_ml": float(tumor_vol),
         "resection_volume_ml": float(resection_vol),
         "margin_only_volume_ml": float(margin_only_vol),
+        "margin_to_tumor_ratio": float(mtr),
         "margin_mm": margin_mm,
         "surgical_planning_status": "Ready",
-        "description": f"{margin_mm}mm marjinli cerrahi plan önerisi."
+        "description": f"{margin_mm}mm marjinli cerrahi plan önerisi.",
+        "safety_score": _calculate_safety_score(mtr, margin_mm)
     }
+
+
+def _calculate_safety_score(mtr: float, margin: float) -> str:
+    """Marjin oranına göre cerrahi güvenlik skoru üret."""
+    if mtr > 3.0: return "DÜŞÜK — Aşırı rezeksiyon riski; marjini küçültün."
+    if mtr < 0.5: return "KRİTİK — Yetersiz marjin; nüks riski yüksek."
+    return "OPTİMAL — Güvenlik marjinleri dengeli."
 
 
 def analyze_proximity_to_eloquent(

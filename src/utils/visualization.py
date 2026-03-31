@@ -244,3 +244,70 @@ def plot_kaplan_meier(
         plt.show()
 
     return fig
+
+
+def plot_shap_summary(
+    shap_values: np.ndarray,
+    features: List[str],
+    title: str = "SHAP Özellik Önem Analizi",
+    save_path: Optional[Union[str, Path]] = None,
+) -> plt.Figure:
+    """
+    Survival analizi için SHAP özellik önem grafiği (Bar chart).
+    """
+    fig, ax = plt.subplots(figsize=(10, 6))
+    fig.patch.set_facecolor("#16213e")
+    ax.set_facecolor("#0f3460")
+
+    # Ortalama mutlak SHAP değerleri
+    importance = np.abs(shap_values).mean(0)
+    indices = np.argsort(importance)
+
+    ax.barh(range(len(indices)), importance[indices], color="#e94560", align="center")
+    ax.set_yticks(range(len(indices)))
+    ax.set_yticklabels([features[i] for i in indices], color="white")
+    ax.set_xlabel("ortalama(|SHAP değeri|)", color="white")
+    ax.set_title(title, color="white", fontweight="bold")
+    ax.tick_params(colors="white")
+    ax.grid(alpha=0.2, color="white")
+
+    plt.tight_layout()
+    if save_path:
+        plt.savefig(save_path, dpi=150, bbox_inches="tight", facecolor="#16213e")
+    return fig
+
+
+def generate_gradcam_3d(
+    volume: np.ndarray,
+    heatmap: np.ndarray,
+    slice_idx: Optional[int] = None,
+    alpha: float = 0.4,
+    title: str = "GlioSight XAI — Grad-CAM Isı Haritası",
+    save_path: Optional[Union[str, Path]] = None,
+) -> plt.Figure:
+    """
+    3B MRI üzerine Grad-CAM ısı haritası overlay'i oluştur.
+    
+    Args:
+        volume  : (H, W, D) MRI kanalı
+        heatmap : (H, W, D) Normalize edilmiş aktivasyon haritası (0-1)
+    """
+    si = slice_idx if slice_idx is not None else volume.shape[2] // 2
+    
+    fig, ax = plt.subplots(figsize=(8, 8))
+    fig.patch.set_facecolor("#1a1a2e")
+    
+    # Alt katman: MRI
+    ax.imshow(volume[:, :, si].T, cmap="gray", origin="lower")
+    
+    # Üst katman: Heatmap (jet/hot)
+    im = ax.imshow(heatmap[:, :, si].T, cmap="jet", alpha=alpha, origin="lower")
+    
+    plt.colorbar(im, ax=ax, fraction=0.046, pad=0.04).ax.tick_params(colors="white")
+    ax.set_title(title, color="white", fontsize=12, pad=10)
+    ax.axis("off")
+    
+    plt.tight_layout()
+    if save_path:
+        plt.savefig(save_path, dpi=150, bbox_inches="tight", facecolor="#1a1a2e")
+    return fig
