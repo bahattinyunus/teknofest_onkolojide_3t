@@ -136,4 +136,34 @@ Projemizde temel alınabilecek yüksek performanslı GitHub projeleri:
 
 ---
 
+## 🚀 9. Kullanım ve Çalıştırma
+
+GlioSight sistemini yerel ortamınızda çalıştırmak için aşağıdaki adımları izleyin:
+
+### 9.1. Kurulum
+```bash
+git clone https://github.com/bahattinyunus/teknofest_onkolojide_3t.git
+cd teknofest_onkolojide_3t
+pip install -r requirements.txt
+```
+
+### 9.2. Uçtan Uca Çıkarım (Segmentasyon + Sağkalım)
+Tek bir hasta dizini üzerinde tüm analizleri çalıştırmak için `src/main.py` motorunu kullanabilirsiniz:
+
+```bash
+python src/main.py --data_dir data/raw/BraTS2021_00001 --output_dir results/
+```
+
+**Parametreler:**
+- `--data_dir`: MRI modalitelerinin (T1, T1ce, T2, FLAIR) bulunduğu hasta klasörü.
+- `--output_dir`: Sonuç görsellerinin ve raporun kaydedileceği dizin.
+- `--seg_ckpt`: (Opsiyonel) Eğitilmiş 3D U-Net model ağırlıkları yolu.
+
+### 9.3. Çıktılar
+İşlem tamamlandığında `results/` klasöründe şu dosyalar oluşacaktır:
+- `segmentation.png`: MRI kesitleri ve renkli tümör maskesi overlay görüntüsü.
+- `report.txt`: Risk skoru, sağkalım düzeyi ve hacimsel tümör istatistiklerini içeren metin raporu.
+
+---
+
 *Bu doküman TEKNOFEST 2026 Onkolojide 3T yarışma şartnamesi baz alınarak oluşturulmuştur.*
