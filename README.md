@@ -1,14 +1,14 @@
 ![Onkolojide 3T Banner](assets/oncology_3t_premium_banner.png)
 
-# 🔬 GlioSight — Multimodal MRI AI Platform
-> **TEKNOFEST 2026: Onkolojide 3T Yarışması — Beyin Kanseri Odaklı Tanı ve Sağkalım Analiz Sistemi**
+# 🔬 GlioSight — Multimodal MRI AI Platform (v2.0)
+> **TEKNOFEST 2026: Onkolojide 3T Yarışması — Tam Kapsamlı (8/8) Klinik Karar Destek Sistemi**
 
 [![Python](https://img.shields.io/badge/Python-3.9+-3776AB?logo=python&logoColor=white)](https://www.python.org/)
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.0+-EE4C2C?logo=pytorch&logoColor=white)](https://pytorch.org/)
 [![MONAI](https://img.shields.io/badge/MONAI-Medical_AI-blue)](https://monai.io/)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
-Bu depo, **TEKNOFEST 2026 Onkolojide 3T** yarışması kapsamında geliştirilen, Glioblastoma (GBM) hastaları için uçtan uca **Tanı, 3B Segmentasyon, Sağkalım Analizi ve Cerrahi Planlama** ekosistemini içermektedir.
+Bu depo, **TEKNOFEST 2026 Onkolojide 3T** yarışması kapsamında geliştirilen, Glioblastoma (GBM) hastaları için uçtan uca **Tanı, 3B Segmentasyon, Sağkalım, Radyogenomik, Radyasyon Planlama, Dijital Patoloji ve Hassas Tıp** ekosistemini içermektedir.
 
 ---
 
@@ -36,10 +36,13 @@ GlioSight, radyologlar ve onkologlar için 4 ana modülden oluşan bütünleşik
 *   **Grad-CAM:** Modelin hangi tümör bölgesine odaklanarak risk tahmini yaptığını gösteren 3B ısı haritaları.
 *   **SHAP:** En belirleyici 15 radyomik özelliğin (örn: Elongation, Sphericity) risk skoru üzerindeki etkisini görselleştirir.
 
-### 🩺 2.4. Cerrahi Planlama & Marjin Analizi (Surgical)
-*   **Güvenlik Koridoru:** Tümör etrafında 5mm-15mm dinamik cerrahi marjin hesaplama.
-*   **MTR Metriği:** Margin-to-Tumor Ratio analizi ile rezeksiyonun agresiflik düzeyini belirleme.
-*   **Safety Score:** Morfolojik verilere dayalı otomatik cerrahi güvenlik puanlama.
+### 🩺 2.4. Cerrahi & Radyasyon Planlama (Surgical/Radiation)
+*   **Surgical:** 5mm-15mm dinamik cerrahi marjin ve "Safety Score" puanlaması.
+*   **Radiation:** Otomatik **CTV (20mm)** ve **PTV (3mm)** hedef hacim üretimi (ESTRO Standartları).
+
+### 🧪 2.5. Dijital Patoloji & Hassas Tıp (Biotech)
+*   **Pathology:** MRI verisinden emüle edilmiş **Ki-67 proliferasyon indeksi** ve mitoz sayısı tahmini.
+*   **Precision Medicine:** MGMT durumuna bağlı **Temozolomide (TMZ)** duyarlılık skoru ve tedavi yolu önerisi.
 
 ---
 

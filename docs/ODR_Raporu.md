@@ -36,20 +36,31 @@ Projenin literatürdeki çözümlerden ayıran temel özellikleri:
 #### 4.1. İş Akış Şeması
 ```mermaid
 graph TD
-    A[Multimodal MRI - DICOM/NIfTI] --> B[Önişleme: Z-Score & Bias Field Correction]
-    B --> C[3D Residual U-Net Segmentasyon]
-    C --> D[Tümör Alt Bölgeleri: WT, TC, ET]
-    D --> E[Radyomik Özellik Çıkarımı - PyRadiomics]
-    E --> F[Cox PH Survival & MGMT Prediction]
-    F --> G[Klinik Karar Destek Raporu & XAI]
+    A[Multimodal MRI] --> B[3D ResUNet Segmentasyon]
+    B --> C[Radiomics & XAI]
+    C --> D[Klinik Branş Entegrasyonu]
+    D --> E1[Cerrahi: Marjin Analizi]
+    D --> E2[Radyasyon: CTV/PTV Planlama]
+    D --> E3[Patoloji: Hücresel Emülasyon]
+    D --> E4[Tıbbi Onkoloji: İlaç Yanıtı]
+    E1 & E2 & E3 & E4 --> F[Bütünleşik Karar Destek Raporu]
 ```
 
-#### 4.2. Algoritmik Detaylar
-1.  **Segmentasyon:** MONAI tabanlı **3D ResUNet** mimarisi. Loss olarak `Dice + Focal Loss` hibrit yapısı kullanılmıştır.
-2.  **Sağkalım Tahmini:** Regresyon ve risk skorlaması için `Cox Proportional Hazards` ve `XGBoost Survival` modelleri entegre edilmiştir.
-3.  **XAI:** Grad-CAM ısı haritaları sayesinde cerrahın tümörün en agresif sızıntı alanlarını görselleştirmesi sağlanmaktadır.
+#### 4.2. Yarışma Kategorileri Uyum Tablosu
+
+| No | TEKNOFEST 2026 Kategori | GlioSight v2.0 Çözümü |
+| :-- | :--- | :--- |
+| 1 | Genetik ve Epigenetik | MGMT Promoter Metilasyon Tahmini |
+| 2 | Hücresel ve Moleküler | Tümör Mikroçevresi & Sferisite Analizi |
+| 3 | Yapay Zekâ İlaç Geliştirme | TMZ Duyarlılık ve İlaç Yanıt Tahmini |
+| 4 | Kanser Aşısı Teknolojileri | Neoantijen Seçimi için Volümetrik Veri |
+| 5 | Tıbbi Onkoloji | Sağkalım (OS) Regresyonu & Risk Skorlama |
+| 6 | Tıbbi Genetik | Radyogenomik Profilleme |
+| 7 | Radyasyon Onkolojisi | Otomatik CTV/PTV Hacim Planlama |
+| 8 | Patoloji | Simüle Histopatolojik İndeksler (Ki-67, Mitoz) |
 
 ### 5. ETİK VE KVKK UYUMU
+... (existing content) ...
 
 Proje, **6698 Sayılı KVKK** ve **WMA Helsinki Bildirgesi** ilkelerine tam uyumlu tasarlanmıştır:
 - **Anonymization:** Tüm hasta verileri model eğitiminden önce de-identifiye edilmektedir.

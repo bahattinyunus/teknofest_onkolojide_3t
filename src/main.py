@@ -21,7 +21,10 @@ sys.path.append(str(Path(__file__).parent.parent))
 
 from src.inference import SegmentationPipeline, SurvivalPipeline, RadiogenomicPipeline
 from src.inference.xai_pipeline import XAIPipeline
+from src.inference.precision_medicine_pipeline import PrecisionMedicinePipeline
 from src.utils.surgical_planner import calculate_surgical_margins, analyze_proximity_to_eloquent
+from src.utils.radiation_planner import generate_target_volumes
+from src.utils.pathology_emulator import PathologyEmulator
 from src.utils.visualization import plot_mri_slices, plot_dice_history, plot_kaplan_meier
 from src.utils.config import setup_logging, load_config
 from src.preprocessing.mri_loader import load_brats_subject
@@ -59,6 +62,16 @@ class GlioSightEngine:
 
         # 4. Açıklanabilir AI (XAI) Boru Hattı
         self.xai_pipeline = XAIPipeline(model=self.seg_pipeline.model)
+        
+        # --- YENİ V2.0 MODÜLLERİ ---
+        # 5. Radyasyon Onkolojisi (CTV/PTV) Planlayıcı
+        self.radiation_planner = generate_target_volumes
+        
+        # 6. Dijital Patoloji Emülatörü
+        self.pathology_emulator = PathologyEmulator()
+        
+        # 7. Hassas Tıp (İlaç Yanıt) Pipeline'ı
+        self.precision_pipeline = PrecisionMedicinePipeline()
 
     def process_patient(
         self,
@@ -93,6 +106,16 @@ class GlioSightEngine:
         surgical_results = calculate_surgical_margins(seg_mask, margin_mm=10.0)
         proximity_warning = analyze_proximity_to_eloquent(seg_mask)
         
+        # F. Radyasyon Onkolojisi (Hacim Planlama)
+        radiation_results = self.radiation_planner(seg_mask, ctv_margin_mm=20.0)
+        
+        # G. Dijital Patoloji ve Hassas Tıp (Simüle)
+        pathology_results = self.pathology_emulator.analyze_tissue(mri_dict, seg_mask)
+        precision_results = self.precision_pipeline.predict_response(
+            mgmt_prob=radio_results["mgmt_probability"],
+            mgmt_status=radio_results["mgmt_status"]
+        )
+        
         # F. Raporlama ve Görselleştirme
         if output_dir:
             out_path = Path(output_dir) / subject_id
@@ -113,22 +136,28 @@ class GlioSightEngine:
                 f.write(f"Hasta ID: {subject_id}\n")
                 f.write("=" * 60 + "\n")
                 
-                f.write("[1] PROGNOSTİK VE GENETİK ANALİZ\n")
+                fwrite_line(f, "[1] PROGNOSTİK VE GENETİK ANALİZ", 60)
                 f.write(f"  - Risk Skoru (OS): {surv_results['risk_score']:.4f}\n")
-                f.write(f"  - Risk Seviyesi: {surv_results['risk_level']}\n")
                 f.write(f"  - MGMT Tahmini: {radio_results['mgmt_status']}\n")
-                f.write(f"  - Metilasyon Olasılığı: %{radio_results['mgmt_probability'] * 100:.2f}\n")
+                f.write(f"  - İlaç Yanıtı (TMZ): {precision_results['clinical_remark']}\n")
                 f.write("-" * 60 + "\n")
                 
-                f.write("[2] CERRAHİ PLANLAMA VE VOLÜMETRİ\n")
+                fwrite_line(f, "[2] CERRAHİ VE RADYASYON PLANLAMA", 60)
                 f.write(f"  - Tümör Hacmi: {surgical_results['tumor_volume_ml']:.2f} mL\n")
-                f.write(f"  - Toplam Rezeksiyon (10mm Marjin): {surgical_results['resection_volume_ml']:.2f} mL\n")
-                f.write(f"  - Kritik Bölge Analizi: {proximity_warning}\n")
+                f.write(f"  - CTV Hacmi (20mm): {radiation_results['ctv_stats']['volume_ml']:.2f} mL\n")
+                f.write(f"  - PTV Hacmi (3mm): {radiation_results['ptv_stats']['volume_ml']:.2f} mL\n")
+                f.write(f"  - Marjin/Tümör Oranı (MTR): {surgical_results.get('margin_to_tumor_ratio', 0):.2f}\n")
+                f.write(f"  - Teknik Durum: {surgical_results.get('safety_score', 'Dengeli')}\n")
                 f.write("-" * 60 + "\n")
                 
-                f.write("[3] AÇIKLANABİLİR AI (XAI) BULGULARI\n")
+                fwrite_line(f, "[3] DİJİTAL PATOLOJİ İÇGÖRÜLERİ", 60)
+                f.write(f"  - Selülarite İndeksi: {pathology_results['cellularity_index']}\n")
+                f.write(f"  - Mitoz İndeksi: {pathology_results['mitotic_index']}\n")
+                f.write(f"  - Ki-67 Tahmini: {pathology_results['ki67_labeling_index']}\n")
+                f.write("-" * 60 + "\n")
+                
+                fwrite_line(f, "[4] AÇIKLANABİLİR AI (XAI) BULGULARI", 60)
                 f.write(f"  - Karar Gerekçelendirme: Grad-CAM ısı haritası üretildi.\n")
-                f.write(f"  - Sınıf Aktivasyon Odağı: Tümör çekirdeği (Enhancing Tumor) yoğunluklu.\n")
                 f.write("=" * 60 + "\n")
                 f.write(f"Rapor Tarihi: 31 Mart 2026\n")
             
@@ -139,8 +168,16 @@ class GlioSightEngine:
             "survival": surv_results,
             "radiogenomics": radio_results,
             "surgical": surgical_results,
+            "radiation": radiation_results,
+            "pathology": pathology_results,
+            "precision": precision_results,
             "xai_heatmap": xai_heatmap
         }
+
+
+def fwrite_line(f, title, width):
+    f.write(title + "\n")
+    # f.write("-" * width + "\n")
 
 
 if __name__ == "__main__":

@@ -43,6 +43,15 @@ class ComprehensiveResponse(BaseModel):
     resection_volume_ml: float
     margin_to_tumor_ratio: float
     surgical_safety_score: str
+    
+    # Yeni v2.0 Alanları
+    ctv_volume_ml: float
+    ptv_volume_ml: float
+    drug_sensitivity_score: float
+    drug_response_status: str
+    cellularity_index: str
+    pathology_summary: str
+    
     xai_status: str
 
 
@@ -80,6 +89,15 @@ async def analyze_comprehensive(subject_id: str, data_path: str):
             resection_volume_ml=results["surgical"]["resection_volume_ml"],
             margin_to_tumor_ratio=results["surgical"].get("margin_to_tumor_ratio", 0),
             surgical_safety_score=results["surgical"].get("safety_score", "N/A"),
+            
+            # v2.0 Mappings
+            ctv_volume_ml=results["radiation"]["ctv_stats"]["volume_ml"],
+            ptv_volume_ml=results["radiation"]["ptv_stats"]["volume_ml"],
+            drug_sensitivity_score=results["precision"]["sensitivity_probability"],
+            drug_response_status=results["precision"]["drug_response_status"],
+            cellularity_index=results["pathology"]["cellularity_index"],
+            pathology_summary=results["pathology"]["pathology_prediction"],
+            
             xai_status="Heatmap Generated Successfully"
         )
     except Exception as e:
