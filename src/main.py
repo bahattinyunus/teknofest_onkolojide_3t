@@ -129,7 +129,7 @@ class GlioSightEngine:
                 save_path=out_path / "comprehensive_analysis.png"
             )
             
-            # Detaylı Rapor Dosyası
+            # Detaylı Rapor Dosyası (TXT)
             report_file = out_path / "precision_oncology_report.txt"
             with open(report_file, "w", encoding="utf-8") as f:
                 f.write(f"GlioSight — Hassas Onkoloji Karar Destek Raporu\n")
@@ -160,6 +160,32 @@ class GlioSightEngine:
                 f.write(f"  - Karar Gerekçelendirme: Grad-CAM ısı haritası üretildi.\n")
                 f.write("=" * 60 + "\n")
                 f.write(f"Rapor Tarihi: 31 Mart 2026\n")
+
+            # Yeni: Markdown Raporu (Premium Sunum İçin)
+            md_report_file = out_path / "clinical_summary.md"
+            with open(md_report_file, "w", encoding="utf-8") as f:
+                f.write(f"# 🧪 GlioSight — Klinik Karar Destek Özeti\n\n")
+                f.write(f"**Hasta Protokol No:** `{subject_id}`  \n")
+                f.write(f"**Analiz Tarihi:** 31 Mart 2026\n\n")
+                
+                f.write(f"## 1. Onkolojik Profil ve Prognoz\n")
+                f.write(f"| Parametre | Sonuç | Klinik Yorum |\n")
+                f.write(f"| :--- | :--- | :--- |\n")
+                f.write(f"| OS Risk Skoru | **{surv_results['risk_score']:.3f}** | {'Yüksek Risk' if surv_results['risk_score'] > 0.5 else 'Düşük/Orta Risk'} |\n")
+                f.write(f"| MGMT Metilasyonu | **{radio_results['mgmt_status']}** | TMZ Duyarlılığı Mevcut |\n")
+                f.write(f"| Ki-67 Tahmini | **{pathology_results['ki67_labeling_index']}** | Proliferatif İndeks |\n\n")
+                
+                f.write(f"## 2. Hacimsel ve Geometrik Analiz\n")
+                f.write(f"| Bölge | Hacim (mL) | Standart |\n")
+                f.write(f"| :--- | :--- | :--- |\n")
+                f.write(f"| Brüt Tümör (GTV) | {surgical_results['tumor_volume_ml']:.2f} | 3D U-Net |\n")
+                f.write(f"| CTV (20mm) | {radiation_results['ctv_stats']['volume_ml']:.2f} | ESTRO |\n")
+                f.write(f"| PTV (3mm) | {radiation_results['ptv_stats']['volume_ml']:.2f} | Klinik Marjin |\n\n")
+                
+                f.write(f"## 3. Tedavi Önerisi (Hassas Tıp)\n")
+                f.write(f"> {precision_results['clinical_remark']}\n\n")
+                
+                f.write(f"--- \n*Bu rapor GlioSight v2.0 AI motoru tarafından otomatik olarak üretilmiştir.*")
             
             print(f"✅ Kapsamlı rapor hazırlandı: {out_path}")
             

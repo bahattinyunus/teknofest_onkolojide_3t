@@ -35,10 +35,11 @@ grad-cam>=1.4.8       # GradCAM, GradCAM++ vb.
 # --- Radyomik ---
 pyradiomics>=3.1.0    # Radyomik özellik çıkarımı
 
-# --- Görselleştirme ---
+# --- Görselleştirme & Web ---
 matplotlib>=3.7.0
 seaborn>=0.12.0
 plotly>=5.17.0
+streamlit>=1.28.0     # İnteraktif Web Arayüzü (GlioSight Dashboard)
 nilearn>=0.10.0       # Beyin görüntüleme görselleştirme
 
 # --- Konfigürasyon ---
