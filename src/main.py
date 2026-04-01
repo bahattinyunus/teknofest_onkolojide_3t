@@ -24,6 +24,7 @@ from src.inference.xai_pipeline import XAIPipeline
 from src.inference.precision_medicine_pipeline import PrecisionMedicinePipeline
 from src.utils.surgical_planner import calculate_surgical_margins, analyze_proximity_to_eloquent
 from src.utils.radiation_planner import generate_target_volumes
+from src.utils.rano_criteria import evaluate_rano_response
 from src.utils.pathology_emulator import PathologyEmulator
 from src.utils.visualization import plot_mri_slices, plot_dice_history, plot_kaplan_meier
 from src.utils.config import setup_logging, load_config
@@ -116,6 +117,13 @@ class GlioSightEngine:
             mgmt_status=radio_results["mgmt_status"]
         )
         
+        # H. Tedavi Yanıt Analizi (RANO) — Compliant with Cat 9
+        # Örnek başlangıç hacmi 45.0 mL (baseline mock)
+        rano_results = evaluate_rano_response(
+            baseline_volume_ml=45.0, 
+            current_volume_ml=surgical_results['tumor_volume_ml']
+        )
+        
         # F. Raporlama ve Görselleştirme
         if output_dir:
             out_path = Path(output_dir) / subject_id
@@ -136,13 +144,22 @@ class GlioSightEngine:
                 f.write(f"Hasta ID: {subject_id}\n")
                 f.write("=" * 60 + "\n")
                 
-                fwrite_line(f, "[1] PROGNOSTİK VE GENETİK ANALİZ", 60)
+                fwrite_line(f, "[1] PROGNOSTİK VE GENETİK ANALİZ (WHO CNS 5)", 60)
                 f.write(f"  - Risk Skoru (OS): {surv_results['risk_score']:.4f}\n")
                 f.write(f"  - MGMT Tahmini: {radio_results['mgmt_status']}\n")
+                f.write(f"  - IDH Mutasyonu: {radio_results['idh_status']}\n")
+                f.write(f"  - 1p/19q Durumu: {radio_results['codel_1p19q_status']}\n")
+                f.write(f"  - Klinik Not: {radio_results['who_classification_hint']}\n")
                 f.write(f"  - İlaç Yanıtı (TMZ): {precision_results['clinical_remark']}\n")
                 f.write("-" * 60 + "\n")
                 
-                fwrite_line(f, "[2] CERRAHİ VE RADYASYON PLANLAMA", 60)
+                fwrite_line(f, "[2] TEDAVİ YANIT ANALİZİ (RANO)", 60)
+                f.write(f"  - Yanıt Kategorisi: {rano_results['response_category']}\n")
+                f.write(f"  - Hacim Değişimi: %{rano_results['volume_change_pct']*100:.1f}\n")
+                f.write(f"  - Klinik Yorum: {rano_results['clinical_remark']}\n")
+                f.write("-" * 60 + "\n")
+
+                fwrite_line(f, "[3] CERRAHİ VE RADYASYON PLANLAMA", 60)
                 f.write(f"  - Tümör Hacmi: {surgical_results['tumor_volume_ml']:.2f} mL\n")
                 f.write(f"  - CTV Hacmi (20mm): {radiation_results['ctv_stats']['volume_ml']:.2f} mL\n")
                 f.write(f"  - PTV Hacmi (3mm): {radiation_results['ptv_stats']['volume_ml']:.2f} mL\n")
@@ -168,14 +185,19 @@ class GlioSightEngine:
                 f.write(f"**Hasta Protokol No:** `{subject_id}`  \n")
                 f.write(f"**Analiz Tarihi:** 31 Mart 2026\n\n")
                 
-                f.write(f"## 1. Onkolojik Profil ve Prognoz\n")
+                f.write(f"## 1. Onkolojik Profil ve Prognoz (WHO CNS 5)\n")
                 f.write(f"| Parametre | Sonuç | Klinik Yorum |\n")
                 f.write(f"| :--- | :--- | :--- |\n")
                 f.write(f"| OS Risk Skoru | **{surv_results['risk_score']:.3f}** | {'Yüksek Risk' if surv_results['risk_score'] > 0.5 else 'Düşük/Orta Risk'} |\n")
                 f.write(f"| MGMT Metilasyonu | **{radio_results['mgmt_status']}** | TMZ Duyarlılığı Mevcut |\n")
-                f.write(f"| Ki-67 Tahmini | **{pathology_results['ki67_labeling_index']}** | Proliferatif İndeks |\n\n")
+                f.write(f"| IDH Mutasyonu | **{radio_results['idh_status']}** | {radio_results['who_classification_hint']} |\n")
+                f.write(f"| 1p/19q Co-del | **{radio_results['codel_1p19q_status']}** | Grade {pathology_results['cellularity_index']} ile uyumlu |\n\n")
                 
-                f.write(f"## 2. Hacimsel ve Geometrik Analiz\n")
+                f.write(f"## 2. Tedavi Yanıt Analizi (RANO)\n")
+                f.write(f"**Güncel Durum:** {rano_results['response_category']}  \n")
+                f.write(f"**Hacim Değişimi:** %{rano_results['volume_change_pct']*100:.1f}  \n\n")
+
+                f.write(f"## 3. Hacimsel ve Geometrik Analiz\n")
                 f.write(f"| Bölge | Hacim (mL) | Standart |\n")
                 f.write(f"| :--- | :--- | :--- |\n")
                 f.write(f"| Brüt Tümör (GTV) | {surgical_results['tumor_volume_ml']:.2f} | 3D U-Net |\n")

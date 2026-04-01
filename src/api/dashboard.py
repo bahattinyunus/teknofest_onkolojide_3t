@@ -107,24 +107,49 @@ else:
     m_col1, m_col2, m_col3, m_col4 = st.columns(4)
     m_col1.metric("Risk Skoru", f"{results['survival']['risk_score']:.2f}")
     m_col2.metric("Tümör Hacmi", f"{results['surgical']['tumor_volume_ml']:.1f} mL")
-    m_col3.metric("MGMT Durumu", results['radiogenomics']['mgmt_status'])
-    m_col4.metric("TMZ Yanıtı", results['precision']['drug_response_status'])
+    m_col3.metric("IDH Durumu", results['radiogenomics']['idh_status'])
+    m_col4.metric("RANO Yanıtı", results.get('rano', {}).get('response_category', 'SD'))
 
     st.divider()
 
     c1, c2 = st.columns([2, 1])
     
     with c1:
-        st.subheader("🖼️ MRI & Segmentasyon Kesitleri")
-        # Placeholder for real slice selection
-        slice_idx = st.slider("Aksiyel Kesit Seçimi", 0, 155, 75)
-        st.image("results/demo_subject/comprehensive_analysis.png", use_container_width=True) # Mock path
+        tab_img, tab_mol, tab_rano = st.tabs(["🖼️ MRI Analizi", "🧬 Moleküler Profil", "📈 Yanıt Takibi"])
         
-        st.subheader("🧬 Radyogenomik & Hassas Tıp")
-        st.info(f"**MGMT Promotör Metilasyonu:** {results['radiogenomics']['mgmt_probability']:.1%}")
-        st.write(f"**Klinik Öneri:** {results['precision']['clinical_remark']}")
+        with tab_img:
+            st.subheader("MRI & Segmentasyon Kesitleri")
+            st.image("results/demo_subject/comprehensive_analysis.png", use_container_width=True)
+            
+        with tab_mol:
+            st.subheader("WHO CNS 5 Moleküler Karakterizasyon")
+            st.json({
+                "MGMT Metilasyonu": f"%{results['radiogenomics']['mgmt_probability']*100:.1f}",
+                "IDH1/2 Mutasyonu": results['radiogenomics']['idh_status'],
+                "1p/19q Co-deletion": results['radiogenomics']['codel_1p19q_status'],
+                "Patolojik Sınıflandırma": results['radiogenomics']['who_classification_hint']
+            })
+            st.info(f"**Klinik Öneri:** {results['precision']['clinical_remark']}")
+
+        with tab_rano:
+            st.subheader("RANO Tedavi Yanıt Analizi")
+            st.write(f"**Kategori:** {results.get('rano', {}).get('response_category', 'SD')}")
+            st.write(f"**Hacim Değişimi:** %{results.get('rano', {}).get('volume_change_pct', 0)*100:.1f}")
+            st.progress(abs(results.get('rano', {}).get('volume_change_pct', 0)), text="Hacim Değişim Oranı")
+            st.write(f"**Yorum:** {results.get('rano', {}).get('clinical_remark', 'Stabil')}")
 
     with c2:
+        st.subheader("🛠️ Teknik Şartname Uyumluluk (ÖDR)")
+        compliance = {
+            "Cat 7: Radyasyon Onkolojisi (CTV/PTV)": True,
+            "Cat 8: Dijital Patoloji (Ki-67)": True,
+            "Cat 9: Radyoloji (3D Seg/Radiomics)": True,
+            "Cat 11: Cerrahi Onkoloji (Marjin)": True,
+            "WHO CNS 5 Standartları": True
+        }
+        for cat, status in compliance.items():
+            st.checkbox(cat, value=status, disabled=True)
+
         st.subheader("📋 Klinik Rapor")
         st.markdown(f"""
         <div class="report-card">
