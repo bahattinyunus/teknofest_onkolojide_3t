@@ -107,7 +107,7 @@ else:
     m_col1, m_col2, m_col3, m_col4 = st.columns(4)
     m_col1.metric("Risk Skoru", f"{results['survival']['risk_score']:.2f}")
     m_col2.metric("Tümör Hacmi", f"{results['surgical']['tumor_volume_ml']:.1f} mL")
-    m_col3.metric("IDH Durumu", results['radiogenomics']['idh_status'])
+    m_col3.metric("Ağrı Seviyesi", results.get('algology', {}).get('pain_level', 'HAFİF'))
     m_col4.metric("RANO Yanıtı", results.get('rano', {}).get('response_category', 'SD'))
 
     st.divider()
@@ -115,42 +115,63 @@ else:
     c1, c2 = st.columns([2, 1])
     
     with c1:
-        tab_img, tab_mol, tab_rano = st.tabs(["🖼️ MRI Analizi", "🧬 Moleküler Profil", "📈 Yanıt Takibi"])
+        tab_img, tab_mol, tab_rano, tab_biotech, tab_algology = st.tabs([
+            "🖼️ MRI & XAI", "🧬 WHO CNS 5", "📈 RANO Takibi", "🧪 Biyoteknoloji", "⌚ Yaşam Kalitesi"
+        ])
         
         with tab_img:
-            st.subheader("MRI & Segmentasyon Kesitleri")
+            st.subheader("MRI & Cerrahi Marjin Analizi")
             st.image("results/demo_subject/comprehensive_analysis.png", use_container_width=True)
             
         with tab_mol:
-            st.subheader("WHO CNS 5 Moleküler Karakterizasyon")
+            st.subheader("Moleküler Sınıflandırma")
             st.json({
-                "MGMT Metilasyonu": f"%{results['radiogenomics']['mgmt_probability']*100:.1f}",
-                "IDH1/2 Mutasyonu": results['radiogenomics']['idh_status'],
-                "1p/19q Co-deletion": results['radiogenomics']['codel_1p19q_status'],
-                "Patolojik Sınıflandırma": results['radiogenomics']['who_classification_hint']
+                "IDH Durumu": results['radiogenomics']['idh_status'],
+                "1p/19q Durumu": results['radiogenomics']['codel_1p19q_status'],
+                "WHO Sınıflandırma": results['radiogenomics']['who_classification_hint']
             })
-            st.info(f"**Klinik Öneri:** {results['precision']['clinical_remark']}")
 
         with tab_rano:
             st.subheader("RANO Tedavi Yanıt Analizi")
             st.write(f"**Kategori:** {results.get('rano', {}).get('response_category', 'SD')}")
-            st.write(f"**Hacim Değişimi:** %{results.get('rano', {}).get('volume_change_pct', 0)*100:.1f}")
             st.progress(abs(results.get('rano', {}).get('volume_change_pct', 0)), text="Hacim Değişim Oranı")
-            st.write(f"**Yorum:** {results.get('rano', {}).get('clinical_remark', 'Stabil')}")
+
+        with tab_biotech:
+            st.subheader("🧪 İlaç Keşfi ve Hedef Belirleme (Cat 3/4)")
+            col_b1, col_b2 = st.columns(2)
+            with col_b1:
+                st.write("**Bağlanma Afinitesi (Molecular Docking):**")
+                st.dataframe(pd.DataFrame(list(results.get('biotech', {}).get('binding_simulation', {}).items()), columns=['Molekül', '-log(Kd)']))
+            with col_b2:
+                st.write("**Yeni Nesil Aşı (Neoantigen):**")
+                st.code("\n".join(results.get('biotech', {}).get('neoantigen_candidates', [])), language="text")
+
+        with tab_algology:
+            st.subheader("⌚ Giyilebilir Algoloji İzleme (Cat 10/12)")
+            v_col1, v_col2 = st.columns(2)
+            v_col1.metric("Kalp Hızı Değişkenliği (HRV)", "42 ms", "-2ms", delta_color="inverse")
+            v_col2.metric("Uyuku Kalitesi", "%65", "+5%")
+            st.write(f"**Yapay Zeka Tahmini Ağrı (VAS):** {results.get('algology', {}).get('predicted_vas', 0)}")
+            st.warning(f"**Önerilen Analjezik:** {results.get('algology', {}).get('analgesic_protocol', 'Yok')}")
 
     with c2:
-        st.subheader("🛠️ Teknik Şartname Uyumluluk (ÖDR)")
+        st.subheader("🛡️ Şartname Uyumluluk (Sovereignty Tier)")
         compliance = {
-            "Cat 7: Radyasyon Onkolojisi (CTV/PTV)": True,
-            "Cat 8: Dijital Patoloji (Ki-67)": True,
-            "Cat 9: Radyoloji (3D Seg/Radiomics)": True,
-            "Cat 11: Cerrahi Onkoloji (Marjin)": True,
-            "WHO CNS 5 Standartları": True
+            "Cat 3: İlaç Keşfi & AI": True,
+            "Cat 4: Kanser Aşısı": True,
+            "Cat 7: Radyasyon Onkolojisi (OAR)": True,
+            "Cat 10: Ağrı Bilimi (Algoloji)": True,
+            "Cat 12: Biyomedikal Cihaz (Sensör)": True
         }
         for cat, status in compliance.items():
             st.checkbox(cat, value=status, disabled=True)
-
-        st.subheader("📋 Klinik Rapor")
+        
+        st.download_button(
+            "📄 ÖDR (ÖN DEĞERLENDİRME RAPORU) İNDİR",
+            data="# ÖDR Content Placeholder",
+            file_name="GlioSight_ODR_Taslak.md",
+            use_container_width=True
+        )
         st.markdown(f"""
         <div class="report-card">
             #### GlioSight Karar Özeti

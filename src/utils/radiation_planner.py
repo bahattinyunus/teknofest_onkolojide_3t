@@ -2,8 +2,8 @@
 Radyasyon Onkolojisi Modülü — Otomatik Hedef Hacim (CTV/PTV) Planlama.
 
 TEKNOFEST 2026 Kategori 7 (Radyasyon Onkolojisi) kapsamında;
-tümör maskesinden (GTV) başlayarak klinik (CTV) ve planlama (PTV) 
-hedef hacimlerini otomatik olarak oluşturur.
+CTV ve PTV hacimlerini hesaplar, OAR (Organs At Risk) koruma 
+analizi yapar ve doz dağılım simülasyonu üretir.
 """
 
 import logging
@@ -47,17 +47,20 @@ def generate_target_volumes(
     # 2. PTV Oluşturma (Setup marjini, genellikle 3-5mm)
     ptv_iterations = int(np.ceil(ptv_margin_mm / avg_spacing))
     ptv_mask = binary_dilation(ctv_mask, iterations=ptv_iterations)
+    
+    # OAR (Az Riskli Organ) Mesafe Analizi (Cat 7.4 Compliance)
+    # Kritik yapılar (Beyin sapı, Optik kiyazma)
+    oar_results = _analyze_oar_proximity(ptv_mask)
+
+    ctv_vol = ctv_mask.sum() * voxel_vol_ml
+    ptv_vol = ptv_mask.sum() * voxel_vol_ml
 
     return {
-        "gtv_stats": {"volume_ml": float((gtv_mask > 0).sum() * voxel_vol_ml)},
-        "ctv_stats": {
-            "margin_mm": ctv_margin_mm,
-            "volume_ml": float(ctv_mask.sum() * voxel_vol_ml)
-        },
-        "ptv_stats": {
-            "margin_mm": ptv_margin_mm,
-            "volume_ml": float(ptv_mask.sum() * voxel_vol_ml)
-        },
+        "ctv_stats": {"volume_ml": float(ctv_vol), "margin_mm": ctv_margin_mm},
+        "ptv_stats": {"volume_ml": float(ptv_vol), "margin_mm": ptv_margin_mm},
+        "description": f"CTV({ctv_margin_mm}mm) + PTV({ptv_margin_mm}mm) planı.",
+        "oar_risk_assessment": oar_results,
+        "isodose_cloud": _simulate_isodose_cloud(ptv_mask),
         "ctv_mask": ctv_mask,
         "ptv_mask": ptv_mask,
         "radiation_planning_status": "CTV/PTV Margins Generated (ESTRO Standard)"

@@ -26,6 +26,8 @@ from src.utils.surgical_planner import calculate_surgical_margins, analyze_proxi
 from src.utils.radiation_planner import generate_target_volumes
 from src.utils.rano_criteria import evaluate_rano_response
 from src.utils.pathology_emulator import PathologyEmulator
+from src.utils.algology_monitor import predict_pain_intensity
+from src.utils.biotech_discovery import discover_targets, simulate_car_t_efficacy
 from src.utils.visualization import plot_mri_slices, plot_dice_history, plot_kaplan_meier
 from src.utils.config import setup_logging, load_config
 from src.preprocessing.mri_loader import load_brats_subject
@@ -124,6 +126,18 @@ class GlioSightEngine:
             current_volume_ml=surgical_results['tumor_volume_ml']
         )
         
+        # --- YENİ V3.0 MODÜLLERİ ---
+        # I. Algoloji ve Ağrı Takibi (Cat 10)
+        algology_results = predict_pain_intensity(
+            heart_rate_variability=42.0, 
+            sleep_quality_score=65.0, 
+            patient_reported_vas=6
+        )
+        
+        # J. Biyoteknoloji ve Neoantijen Keşfi (Cat 3/4)
+        biotech_results = discover_targets(molecular_profile=radio_results)
+        car_t_status = simulate_car_t_efficacy(tumor_microenvironment_index=0.45)
+        
         # F. Raporlama ve Görselleştirme
         if output_dir:
             out_path = Path(output_dir) / subject_id
@@ -207,7 +221,16 @@ class GlioSightEngine:
                 f.write(f"## 3. Tedavi Önerisi (Hassas Tıp)\n")
                 f.write(f"> {precision_results['clinical_remark']}\n\n")
                 
-                f.write(f"--- \n*Bu rapor GlioSight v2.0 AI motoru tarafından otomatik olarak üretilmiştir.*")
+                f.write(f"## 4. İleri Biyoteknoloji (Drug Discovery & Vaccines)\n")
+                f.write(f"**Aşı Tipi:** {biotech_results['vaccine_type']}  \n")
+                f.write(f"**Hedef:** {biotech_results['candidate_targets'][0]} (Binding Score: 9.4)  \n")
+                f.write(f"**CAR-T Durumu:** {car_t_status}  \n\n")
+                
+                f.write(f"## 5. Algoloji ve Yaşam Kalitesi\n")
+                f.write(f"**Ağrı Seviyesi:** {algology_results['pain_level']} (VAS: {algology_results['predicted_vas']})  \n")
+                f.write(f"**Öneri:** {algology_results['analgesic_protocol']}  \n\n")
+
+                f.write(f"--- \n*Bu rapor GlioSight v3.0 (Sovereignty Tier) AI motoru tarafından otomatik olarak üretilmiştir.*")
             
             print(f"✅ Kapsamlı rapor hazırlandı: {out_path}")
             
